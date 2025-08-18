@@ -1,0 +1,1001 @@
+customer_id,age,gender,income,location,joined_date,email,phone,total_spent,purchase_frequency,last_purchase_days,preferred_category
+C0000,56,F,14229,South Lacey,2024-05-16,westyesenia@example.com,+1-490-892-3142x4825,0,4,298,Home
+C0001,69,M,19407,West Samantha,2023-12-23,gina84@example.com,001-638-960-4251,269,3,233,Beauty
+C0002,46,M,35783,Lake David,2020-10-09,sara54@example.org,+1-813-728-7895x14375,369,1,271,Beauty
+C0003,32,M,23311,Evansport,2021-11-02,qmalone@example.net,6496456459,28,7,60,Electronics
+C0004,60,M,55699,West Darlene,2021-04-03,fritzbridget@example.org,001-819-261-7575x1031,11263,83,296,Beauty
+C0005,25,M,25779,Michaelburgh,2021-06-30,tammy36@example.net,611.707.5162,128,3,235,Home
+C0006,38,M,23785,Lake Christopher,2024-06-15,carlapadilla@example.com,506-227-3562,181,3,165,Beauty
+C0007,56,M,19464,Whiteville,2021-03-03,samantha79@example.net,889-241-6960x8678,181,3,194,Fashion
+C0008,36,M,23235,New Jamesmouth,2024-11-13,mwells@example.org,(872)407-1505,130,3,234,Fashion
+C0009,40,F,20723,Jameston,2023-02-22,dianamills@example.com,713.986.0105x438,0,1,183,Sports
+C0010,28,F,29238,Nancyside,2023-06-09,sophiascott@example.org,(347)285-1489x65815,653,1,333,Beauty
+C0011,28,F,32295,Kaitlynside,2020-09-13,lisarodriguez@example.com,001-270-358-2480,39389,98,232,Fashion
+C0012,41,F,16084,Russellmouth,2022-08-08,dpalmer@example.net,216-462-3562x689,126,0,361,Electronics
+C0013,53,F,12932,New Davidburgh,2021-02-12,kellymoyer@example.net,(385)657-4142x515,543,3,107,Fashion
+C0014,57,M,10567,North Melissaland,2023-09-28,masseycorey@example.org,001-819-280-4881x7227,677,3,223,Fashion
+C0015,41,F,26989,Joannfort,2024-01-26,taylortate@example.com,+1-925-687-5791,943,0,80,Electronics
+C0016,20,F,14166,Ivanmouth,2024-03-31,joshua87@example.net,(477)767-0579,274,2,234,Electronics
+C0017,39,F,9309,South Michaelchester,2022-11-08,ibean@example.net,001-602-697-2496x694,180,1,184,Beauty
+C0018,19,M,25730,New Brian,2022-05-12,zhall@example.net,+1-306-617-6684,196,2,185,Electronics
+C0019,41,M,59706,Patrickmouth,2022-07-02,tylersexton@example.net,815.772.1991x9714,623,4,134,Home
+C0020,61,M,21973,Ortizville,2025-07-24,katelynarmstrong@example.org,384-679-6905x698,848,4,220,Electronics
+C0021,47,M,30803,New Christopherside,2020-11-09,rmiller@example.com,(626)243-2011x57230,100,1,288,Fashion
+C0022,55,F,22759,Bowenmouth,2023-01-19,ashleycole@example.net,326-781-3898x89647,231,3,364,Electronics
+C0023,19,F,21172,Cookville,2021-07-01,serranochristopher@example.com,+1-240-565-9178x6085,1161,3,202,Electronics
+C0024,38,M,31813,East Kellibury,2022-02-03,robertcuevas@example.com,001-383-316-6813x47662,821,2,146,Beauty
+C0025,50,Other,19611,Whiteport,2023-03-17,rsanchez@example.com,2354071598,19260,67,324,Beauty
+C0026,29,F,24512,Leonhaven,2022-08-21,racheljohnson@example.com,8392925450,701,3,127,Electronics
+C0027,39,M,25051,South Davidstad,2022-01-09,lthomas@example.net,3996840956,249,2,135,Fashion
+C0028,61,M,16861,New Kimburgh,2020-09-27,mitchellamy@example.org,4373851425,446,3,114,Fashion
+C0029,42,M,32755,New Anthonyview,2024-11-05,justin03@example.com,001-232-966-8644,540,2,264,Beauty
+C0030,66,M,20537,North Autumnborough,2025-03-28,jo75@example.com,(878)536-9898x6584,40,1,64,Beauty
+C0031,44,M,16280,New Sarahshire,2021-12-09,galvanbrittany@example.com,986.674.9931x2769,393,0,135,Fashion
+C0032,59,M,27298,South Jamietown,2020-09-10,sandersgregory@example.net,718-223-6407x749,617,3,41,Home
+C0033,45,M,15376,Masonburgh,2024-06-06,baileyryan@example.com,983-332-0669x7611,91,4,296,Beauty
+C0034,33,M,22276,Chelseafort,2023-09-12,mcneilhaley@example.net,450.203.3542x75267,758,4,3,Electronics
+C0035,32,F,21946,Lake Luismouth,2022-12-04,pittsjoseph@example.org,4664823071,438,3,194,Fashion
+C0036,64,M,34008,Anneview,2023-06-23,zsimmons@example.com,9192595040,1520,3,110,Sports
+C0037,68,F,26632,Tinatown,2022-08-28,taylor01@example.com,001-379-419-3397x966,21,6,221,Home
+C0038,61,M,21807,Mccallton,2023-11-01,karnold@example.org,636-902-4148x18492,154,4,4,Fashion
+C0039,69,Other,30549,Haasburgh,2020-10-15,allenlori@example.net,+1-398-901-7107x5789,460,4,244,Fashion
+C0040,20,M,38410,South Jeffrey,2021-08-19,holly73@example.org,330.713.2591x01993,175,5,166,Fashion
+C0041,54,M,27532,East Jameshaven,2022-04-25,dianaavery@example.com,(864)256-3346x7480,626,1,26,Fashion
+C0042,68,F,22117,Millerberg,2023-10-31,john55@example.com,665.901.0118x9753,711,4,17,Home
+C0043,24,F,13033,Port Kimberly,2021-02-06,ericksondenise@example.com,(411)770-0036,54,2,216,Fashion
+C0044,38,F,14385,Hoodfurt,2025-02-18,dianawhite@example.com,991.614.0130x34548,360,4,92,Home
+C0045,26,M,19494,Lindastad,2021-07-01,lewisdawn@example.org,001-400-898-4284x993,355,5,31,Beauty
+C0046,56,M,17260,Masonhaven,2024-11-17,irodriguez@example.com,762-381-4633,230,2,205,Electronics
+C0047,35,F,20439,Perezside,2020-11-10,yolandalopez@example.net,521-931-7709x18740,1350,4,207,Fashion
+C0048,21,F,22531,Leemouth,2023-10-25,alan52@example.net,547-316-7173x8985,878,1,107,Fashion
+C0049,42,F,27224,West Josephfurt,2020-11-03,campbellstephen@example.org,+1-586-586-7327,597,2,146,Home
+C0050,31,F,21414,East Jocelynport,2022-02-19,sheila10@example.org,+1-282-501-3827x6000,626,4,101,Electronics
+C0051,67,M,26758,Lake Stephaniemouth,2023-01-19,kgarza@example.org,9309910962,309,1,318,Home
+C0052,26,F,22601,Clarkchester,2021-04-08,ajimenez@example.net,224.544.6617x243,1269,1,241,Beauty
+C0053,43,M,9994,West Davidberg,2021-05-19,umcguire@example.net,+1-202-742-0343,42099,63,247,Fashion
+C0054,19,M,15127,New Alejandroview,2022-12-30,stuart36@example.org,(778)626-0126x7913,652,3,163,Sports
+C0055,37,M,20792,South Emily,2021-11-28,elizabeth54@example.org,001-535-828-3610x7461,989,3,173,Sports
+C0056,45,F,13576,Nicholasshire,2021-12-11,molinacharles@example.com,+1-505-917-9532x88100,160,4,35,Electronics
+C0057,64,M,28000,West Josephton,2024-09-22,diazdiana@example.com,(751)577-5684,31352,98,284,Electronics
+C0058,24,M,40631,Whiteshire,2024-11-21,dominiquebrown@example.com,001-794-215-7197x583,108,3,359,Sports
+C0059,61,F,35864,New Cynthia,2024-01-08,mford@example.net,489.231.2193,211,6,358,Sports
+C0060,25,M,20223,Deborahchester,2022-03-14,dfoster@example.org,+1-874-256-5287x426,204,2,21,Electronics
+C0061,64,F,39986,Dustinshire,2022-02-11,sean07@example.com,(398)537-2918x6672,1920,2,308,Electronics
+C0062,52,M,23376,Garrisonberg,2023-08-14,meganspears@example.com,(719)297-8636,970,2,163,Electronics
+C0063,31,F,19248,Lake Krista,2024-02-20,sarah02@example.net,+1-914-403-2958x774,603,4,97,Sports
+C0064,34,F,17233,New Marissachester,2024-03-29,chrisbowman@example.org,+1-993-693-6534x09605,649,1,307,Electronics
+C0065,53,M,19516,Bairdburgh,2022-04-07,lambertlinda@example.com,287.425.2919x29511,412,4,339,Fashion
+C0066,67,M,18858,North Alexisborough,2025-02-16,jonesthomas@example.com,(928)968-5022,1469,3,55,Beauty
+C0067,57,M,23580,Port Davidberg,2023-07-11,milleramber@example.com,001-509-256-9825x69133,342,3,333,Electronics
+C0068,21,M,23487,Lisafort,2023-05-23,kmartinez@example.net,823.718.4584x36395,239,5,127,Home
+C0069,19,Other,22053,West Alexandriafort,2024-07-04,davidjohnston@example.org,001-976-900-7611,88,3,193,Electronics
+C0070,23,M,26233,Hallfort,2023-01-30,qholloway@example.org,887-341-4242x759,771,1,243,Beauty
+C0071,59,F,35463,Lake Monica,2024-01-29,nalexander@example.net,2248487731,662,1,349,Electronics
+C0072,21,M,32203,Port Steve,2020-11-26,sheila41@example.org,+1-394-256-3146,242,3,88,Home
+C0073,46,F,12161,East Jasonport,2021-06-04,rebeccarodriguez@example.org,840-838-2799,12,5,336,Home
+C0074,35,F,7930,Lake Janet,2023-09-14,jameslittle@example.org,202-551-5476,913,4,215,Electronics
+C0075,43,F,32007,Obrienfurt,2022-08-17,isaiah52@example.net,977.981.8363,5,2,92,Electronics
+C0076,61,M,12749,Ferrellberg,2021-01-22,jlucas@example.net,272-998-9108x513,608,7,303,Fashion
+C0077,51,M,20132,South William,2024-10-01,bergkristen@example.net,818.914.0761,1757,0,235,Electronics
+C0078,27,M,13793,New Ashley,2020-08-28,fergusonalexander@example.com,905-370-0712x2113,287,4,184,Beauty
+C0079,53,F,10712,Port Robertton,2022-12-15,lcarter@example.org,(477)714-2855,133,2,38,Beauty
+C0080,31,F,27353,Williamfort,2022-02-06,jose34@example.net,844-382-1750,610,3,139,Fashion
+C0081,48,F,29841,Adamsborough,2024-09-05,andremathis@example.com,001-788-219-2890x1516,11022,81,195,Home
+C0082,65,M,17490,Theresaton,2024-04-22,reyesbriana@example.org,(408)386-7107,395,3,15,Home
+C0083,32,F,7813,East Vanessa,2024-09-27,brittany40@example.net,+1-230-296-1539x27070,1706,1,257,Beauty
+C0084,25,F,17703,East Kathleen,2024-05-09,kwolf@example.com,001-649-280-0839x72797,26,3,135,Fashion
+C0085,31,M,25763,Schneidertown,2022-02-22,mary29@example.com,+1-443-398-5852x7547,351,6,1,Electronics
+C0086,40,M,12190,Lorimouth,2022-11-15,macdonaldjames@example.org,(851)411-5037,633,3,49,Electronics
+C0087,57,F,23702,Mariabury,2021-02-16,jdickerson@example.org,(299)419-1342x43840,992,2,96,Fashion
+C0088,38,F,21891,East Gwendolynfort,2025-06-28,franklinmelissa@example.org,5466165601,98,1,201,Fashion
+C0089,33,F,27770,South Karen,2024-12-31,hmurphy@example.org,998.390.7443,804,4,26,Fashion
+C0090,62,M,23105,Nataliefurt,2022-10-15,lchristensen@example.net,+1-688-269-4984,402,4,343,Electronics
+C0091,35,F,14924,South Drew,2020-11-04,kwilliams@example.com,001-708-432-7675x07960,252,3,235,Home
+C0092,64,M,35547,Christophermouth,2023-02-21,reevesjennifer@example.net,572.671.3136,70,1,349,Electronics
+C0093,41,M,20673,Gonzalezville,2024-09-29,kpadilla@example.net,863.687.1555,1002,4,244,Electronics
+C0094,43,M,21787,Henrystad,2024-06-25,brightjames@example.net,(411)592-3797x03330,85,2,358,Fashion
+C0095,42,F,15164,Lake Joanburgh,2023-01-27,yfoster@example.org,617-379-3485x724,185,4,327,Electronics
+C0096,62,F,18447,Mitchellborough,2022-02-19,chadhooper@example.org,+1-397-456-0422,171,1,351,Home
+C0097,58,F,15461,North Whitneybury,2020-08-27,timothy03@example.org,001-251-407-5230x186,1025,5,51,Fashion
+C0098,46,M,20554,Lopezville,2025-02-22,harrisdebra@example.com,(261)230-2161x8993,558,3,81,Fashion
+C0099,32,F,43681,Sullivanberg,2023-05-16,gramirez@example.com,001-912-521-4672x6925,796,1,36,Fashion
+C0100,62,M,12723,South Jessica,2023-05-10,joneskathryn@example.org,(835)245-2420,144,2,67,Electronics
+C0101,18,F,11551,Amymouth,2022-04-29,erin73@example.net,4519742070,490,1,129,Electronics
+C0102,42,M,39674,New Stevenport,2020-12-25,patriciagreen@example.net,679-218-2289,424,5,155,Beauty
+C0103,24,M,20257,Sullivanbury,2024-06-14,hcline@example.com,001-503-541-8085x895,894,1,245,Fashion
+C0104,26,M,16854,Jamesberg,2023-04-28,mooreluis@example.org,001-869-640-1060x7266,1182,3,111,Fashion
+C0105,41,M,33388,South Ryanbury,2024-05-28,joshua89@example.org,874-860-0583x33427,6,2,168,Electronics
+C0106,18,F,17287,Barronport,2025-01-16,myersguy@example.org,211-797-3727,560,3,142,Fashion
+C0107,61,F,45725,North Barryport,2025-03-11,angela98@example.com,799.262.4434x65748,26,2,356,Home
+C0108,25,M,28887,Tonyamouth,2021-09-01,csharp@example.com,+1-327-493-9161,397,5,197,Home
+C0109,41,F,18121,Williamport,2024-02-01,scott80@example.com,001-656-276-7650x9154,169,4,109,Home
+C0110,28,M,52204,Murphyfurt,2022-04-22,harrisrobert@example.com,(470)524-6204x6142,183,5,79,Electronics
+C0111,68,F,17287,Brandiburgh,2023-11-30,michael64@example.net,001-443-664-9812x756,217,2,161,Electronics
+C0112,34,F,29638,Lake Wesley,2024-03-16,cherylmurphy@example.org,001-877-229-2869x85376,485,3,19,Beauty
+C0113,25,F,24827,Mayofort,2025-06-25,brownmichelle@example.com,9536514340,203,2,127,Sports
+C0114,52,M,37074,East Hunter,2023-11-07,amandawilkinson@example.net,7356485545,659,1,205,Electronics
+C0115,52,F,41134,Port Larry,2024-01-19,gallowayjustin@example.org,319-341-5565,259,3,29,Fashion
+C0116,50,F,22310,South Stephen,2024-07-07,cochranmark@example.com,436.870.1480,35,1,207,Electronics
+C0117,22,M,16295,North Richardmouth,2021-05-07,jorge17@example.org,875.485.3614x2407,765,7,280,Electronics
+C0118,59,M,26475,West Andrew,2021-04-19,ejohnson@example.org,001-821-621-3170x724,168,6,151,Fashion
+C0119,56,F,16796,West Derek,2024-09-11,barryamanda@example.net,496.508.1682x8261,283,3,240,Electronics
+C0120,58,F,49284,Bellstad,2022-08-25,vpatton@example.net,+1-875-318-7826x798,578,4,266,Home
+C0121,45,F,23262,Johnfurt,2022-08-06,jessica97@example.com,+1-624-491-0763x07389,202,1,182,Fashion
+C0122,24,F,19031,Hudsonberg,2020-10-29,laurendickerson@example.net,001-236-428-1250x962,29,1,105,Electronics
+C0123,26,F,23715,South Susanshire,2024-12-26,pramos@example.net,001-856-945-9695x5684,234,2,236,Electronics
+C0124,25,M,12850,Lucasport,2023-12-03,sthomas@example.net,440-790-8999,1445,3,173,Beauty
+C0125,29,M,14933,Douglaschester,2023-03-18,yrhodes@example.com,(380)907-3543x612,513,3,158,Electronics
+C0126,51,M,35602,Lake Kristy,2022-07-27,jonesdaniel@example.com,+1-330-881-0079x928,556,1,172,Home
+C0127,50,F,16936,Danielchester,2022-09-01,stephen38@example.com,406-812-0346,500,4,311,Fashion
+C0128,65,M,14490,Brownshire,2023-03-27,phowell@example.org,564.738.4099x00360,110,1,157,Home
+C0129,40,F,27300,Larsontown,2022-01-15,mirandasherry@example.com,892-230-7424x6663,270,3,258,Fashion
+C0130,41,F,35393,Port Donna,2022-11-23,bennettsusan@example.net,+1-211-481-8751x631,695,3,164,Electronics
+C0131,54,F,29365,Franciscoborough,2025-04-01,trobinson@example.com,+1-272-226-3383,53,1,147,Electronics
+C0132,52,M,32807,New Lisa,2020-12-15,plawrence@example.com,877-874-4202,162,2,154,Electronics
+C0133,61,F,16273,East Michellemouth,2023-01-22,joelthomas@example.net,(592)307-5129x713,161,4,38,Fashion
+C0134,57,M,12472,Faithbury,2022-11-27,robert25@example.org,+1-655-509-2527x4278,18756,67,131,Home
+C0135,39,F,40156,North Kennethstad,2022-03-31,vbowman@example.org,318.861.1787x7064,1965,0,358,Electronics
+C0136,44,M,19359,West Jaimeshire,2020-11-15,ewingpam@example.com,+1-466-962-0345x92595,29968,92,255,Electronics
+C0137,52,M,19923,Katiemouth,2021-11-17,matthewtownsend@example.org,6504862280,365,0,208,Fashion
+C0138,18,F,37469,Cynthiaberg,2022-10-28,xkeller@example.com,+1-811-417-5096,44192,62,95,Home
+C0139,52,M,27515,Zacharyview,2022-03-10,charles55@example.com,(879)464-0125,23305,57,348,Sports
+C0140,54,M,26432,New Christymouth,2022-03-04,richard91@example.org,+1-830-487-6745x09640,60,1,327,Home
+C0141,64,F,52365,East Kristopher,2021-08-14,parksmichelle@example.com,+1-229-693-3999x1605,258,5,171,Fashion
+C0142,31,F,17027,Johnberg,2021-10-04,elizabethrodgers@example.com,9817539845,669,4,250,Home
+C0143,20,F,31924,South Kylechester,2025-03-29,donaldsondavid@example.org,+1-617-747-7870,609,4,190,Sports
+C0144,18,F,22534,East Johnnybury,2021-03-18,palmerjason@example.com,+1-340-515-4658x8560,274,3,199,Beauty
+C0145,22,F,24524,Myerstown,2025-08-11,christopher69@example.com,001-431-800-5904,212,6,221,Fashion
+C0146,43,M,40594,Connorbury,2021-09-11,tamarahill@example.org,001-450-551-5885x042,253,2,24,Electronics
+C0147,31,M,26987,Francesberg,2025-02-05,michellehaynes@example.org,931-740-0948,153,4,244,Electronics
+C0148,56,M,27318,East Megan,2024-02-03,zbeltran@example.org,001-796-464-9084,114,2,324,Fashion
+C0149,44,F,33826,North John,2025-08-10,keith88@example.org,6572033174,329,5,128,Home
+C0150,26,F,19034,Port Taylorland,2023-09-14,harryvasquez@example.org,787.210.1344,156,3,93,Fashion
+C0151,32,M,15745,Murphyton,2025-07-18,scottarias@example.com,+1-747-460-8843x899,169,3,300,Electronics
+C0152,32,M,14502,East Shanechester,2021-02-25,bsoto@example.com,(803)810-4589,534,3,133,Home
+C0153,43,F,10031,West Elizabeth,2022-10-28,chelseaserrano@example.com,400.445.6339,1729,1,55,Beauty
+C0154,59,M,50135,Henryberg,2024-10-06,elizabeththompson@example.com,001-920-420-4649x208,36014,88,158,Electronics
+C0155,30,F,14167,Leefort,2022-08-30,russelledwin@example.com,305-846-2473x1697,40,6,29,Home
+C0156,68,F,20160,East Todd,2024-08-26,bailey92@example.net,537-858-0518x7988,39,3,211,Fashion
+C0157,49,F,19717,Lake David,2023-12-09,lori33@example.net,507.700.6680x2802,1512,1,154,Beauty
+C0158,56,M,24908,Arnoldland,2025-04-23,shawn02@example.net,570.820.8205x4108,176,3,293,Beauty
+C0159,66,F,30524,Wagnerstad,2021-08-13,oflores@example.org,312-468-4993x6257,48,3,222,Fashion
+C0160,69,F,31075,Hodgesburgh,2023-06-29,clinton01@example.com,001-202-751-3817x794,456,2,115,Home
+C0161,49,F,17444,Laurafort,2023-05-20,trevor31@example.net,+1-389-309-4897x2186,488,3,158,Beauty
+C0162,21,F,20602,Ryanside,2024-05-29,myoung@example.org,659.579.0490,522,0,259,Fashion
+C0163,47,F,24662,Matthewmouth,2024-02-06,michael35@example.org,(328)775-8534x374,155,8,251,Fashion
+C0164,54,F,19940,Bensonberg,2021-05-08,lindalevine@example.org,(432)366-6138,7,1,122,Beauty
+C0165,40,M,41895,Sancheztown,2022-06-19,joy21@example.org,+1-980-801-1823x893,1676,1,299,Electronics
+C0166,56,F,26806,Crystalberg,2022-03-07,benjaminpowers@example.org,+1-451-757-3470x631,144,3,263,Fashion
+C0167,62,F,29553,East Kaylaview,2024-05-29,smorgan@example.net,(534)433-4508x70180,563,2,49,Beauty
+C0168,32,M,28714,New Michellefort,2024-04-28,aparker@example.com,+1-533-433-0666x42931,613,2,329,Home
+C0169,60,F,35220,Port Sharon,2023-02-17,areyes@example.org,+1-551-441-4358x90704,40624,63,297,Fashion
+C0170,46,F,23680,Emilyfurt,2020-10-04,alejandrareese@example.org,(762)308-8382,187,4,362,Electronics
+C0171,53,F,13111,Molinachester,2021-11-25,curtiscristina@example.org,621.368.5932x597,158,3,77,Fashion
+C0172,30,M,25845,Bryanberg,2021-12-03,daltonkatherine@example.org,478.415.0499x61265,455,7,127,Electronics
+C0173,49,M,16974,Andreaside,2022-03-19,teresa99@example.org,978-915-6077x835,1005,3,197,Electronics
+C0174,24,Other,17828,Lake Wendy,2024-08-09,baileygabrielle@example.com,(505)675-4875,1466,3,221,Home
+C0175,68,F,27848,New Meganton,2021-02-09,melissasmith@example.org,665-856-7144x261,55,3,91,Electronics
+C0176,39,M,36145,Thompsonborough,2023-08-16,juarezjeffrey@example.net,+1-480-491-6520x42703,84,5,8,Fashion
+C0177,45,F,22214,Lesliestad,2024-04-20,qgregory@example.org,262.832.2997x972,1447,5,32,Fashion
+C0178,19,F,24922,Torresmouth,2025-06-11,dlin@example.net,001-326-652-0580x85474,666,4,320,Sports
+C0179,59,F,43516,Stacybury,2022-06-19,johnstonbryan@example.net,(802)495-0943x8306,1072,4,269,Fashion
+C0180,62,F,24253,Caitlinborough,2021-04-24,nancy03@example.com,378.659.9336x61715,113,2,191,Electronics
+C0181,23,M,62359,Johnsontown,2024-01-27,melissa22@example.org,305.925.2601x32482,442,6,349,Electronics
+C0182,45,M,27617,Youngfurt,2022-05-07,newmanjacob@example.org,+1-427-353-4647x7042,603,3,163,Home
+C0183,45,M,10891,West Kennethville,2024-08-01,lcarroll@example.net,+1-971-916-8851x36719,47305,58,61,Home
+C0184,61,F,29772,North Jeremy,2022-01-06,cruzjames@example.net,264-673-9658,262,6,264,Fashion
+C0185,61,M,25654,North Matthew,2022-01-12,christinawalker@example.com,539-438-4651x050,7,4,285,Fashion
+C0186,37,M,36897,New Julia,2021-08-04,renee57@example.net,001-794-672-2772x6009,437,3,95,Electronics
+C0187,47,M,28832,Aaronside,2023-02-23,buchanantracy@example.com,001-451-628-7836x01063,145,3,41,Fashion
+C0188,28,F,20839,Richardland,2024-01-16,yrodriguez@example.net,430.440.4576x655,299,6,149,Fashion
+C0189,45,F,13497,Holmesmouth,2022-07-07,psmith@example.com,463-430-8546,1580,4,204,Electronics
+C0190,42,M,20259,Barrerachester,2022-06-02,turnerlisa@example.com,(669)435-3255x79540,254,2,267,Electronics
+C0191,56,M,15674,Hansenton,2024-09-03,john86@example.com,988-718-0940x85924,915,1,2,Electronics
+C0192,50,F,17462,Huntfort,2025-01-02,nancy77@example.net,612.887.3245x29016,104,3,178,Electronics
+C0193,18,M,27873,Collinsfurt,2022-02-04,whitetracey@example.org,001-988-221-9432x8861,558,4,194,Home
+C0194,44,M,42957,South Sara,2024-09-10,erica55@example.net,(229)383-4359x619,1886,5,336,Electronics
+C0195,69,M,25793,Lake Courtney,2024-02-07,droberts@example.org,4678487512,53,6,196,Electronics
+C0196,30,M,13652,South Amy,2025-02-25,ugraham@example.org,001-274-622-5397,4,2,343,Electronics
+C0197,58,M,26313,Carlsonfurt,2023-06-12,jzimmerman@example.org,290-326-2525x0580,284,4,249,Sports
+C0198,20,F,35548,Lake Amyton,2025-08-08,coxmercedes@example.com,623.460.1564x4682,48,4,212,Beauty
+C0199,56,M,17258,Morenochester,2024-03-28,anthonylee@example.org,(754)957-8023,689,0,153,Electronics
+C0200,23,F,20876,West Sonyaborough,2024-11-09,melissaanthony@example.com,+1-980-632-5707x6700,1229,4,158,Fashion
+C0201,25,M,22156,Joseberg,2021-04-26,pross@example.org,(857)995-6406,284,5,362,Electronics
+C0202,44,F,16091,Briggsburgh,2022-09-16,cherrycourtney@example.net,+1-389-349-2568x933,34398,93,139,Fashion
+C0203,26,F,28547,Port Paulview,2022-12-04,jacob94@example.com,5215195388,284,5,221,Electronics
+C0204,54,M,20986,East Pamelachester,2021-11-30,chadharris@example.com,001-858-243-6986x66610,642,4,273,Home
+C0205,50,F,26051,Curtisshire,2024-12-28,sballard@example.com,(387)289-1650,4,5,154,Fashion
+C0206,68,M,15444,South Hollymouth,2024-04-23,valerieclark@example.org,946-894-5217,445,2,249,Beauty
+C0207,59,F,18490,Port Richard,2021-03-17,gberg@example.com,001-714-759-6640,475,2,279,Electronics
+C0208,61,M,29405,North John,2021-01-13,sfrank@example.net,(899)500-9177,507,0,304,Beauty
+C0209,41,M,18974,Port Timothy,2022-07-16,perryanthony@example.net,001-735-653-1215,138,4,276,Beauty
+C0210,32,M,43949,Samuelton,2024-05-27,brenda45@example.net,416-371-6483,625,1,2,Electronics
+C0211,49,Other,18772,Ortizview,2022-04-01,bergerphillip@example.net,2748499832,47,2,88,Fashion
+C0212,49,F,24097,North Ashleyshire,2023-04-17,caroline76@example.com,200.411.7011x922,111,3,287,Electronics
+C0213,41,F,31985,Clarkmouth,2020-12-16,kennethwalker@example.net,(757)761-2512,1049,2,130,Electronics
+C0214,58,M,12489,New Ericaburgh,2023-02-12,johnwilkins@example.net,(279)698-6901x717,671,2,78,Electronics
+C0215,69,F,10890,Beckberg,2021-11-12,nicholas43@example.net,702-761-6816,6,1,260,Home
+C0216,66,M,11964,North Noahstad,2023-12-03,lmills@example.org,442.422.8479x11444,142,3,241,Fashion
+C0217,66,F,36498,West Kim,2020-12-21,brendan13@example.com,+1-457-340-5543,120,4,141,Sports
+C0218,69,M,17663,Harrisfurt,2024-11-14,ugarcia@example.org,240.360.7065,157,6,228,Electronics
+C0219,29,M,61284,New Lisa,2023-02-19,urobinson@example.org,854.812.8025,142,3,163,Sports
+C0220,56,M,17576,Port Kristin,2023-12-11,awells@example.com,524-877-7008,32,2,236,Electronics
+C0221,19,M,23713,Lake Marissamouth,2023-09-25,myersbrittany@example.org,001-585-598-6185x0096,307,3,128,Beauty
+C0222,20,F,40816,Barryhaven,2023-08-21,christopher51@example.net,251.727.6363,659,1,200,Fashion
+C0223,66,M,49140,South Krystalchester,2025-06-16,mark25@example.org,2738090031,466,2,31,Electronics
+C0224,54,F,50241,Roseshire,2025-04-30,qdavis@example.org,308.990.0140x216,558,1,138,Beauty
+C0225,66,M,35715,West Benjamin,2024-11-21,osmith@example.com,451-481-3083,42,3,21,Fashion
+C0226,34,F,33177,Christinaville,2025-04-30,ygarcia@example.org,+1-392-739-5951,1512,4,234,Home
+C0227,66,M,27917,East Laurenside,2023-06-07,rcook@example.com,(570)282-2943,911,2,202,Home
+C0228,19,M,30071,Choiton,2022-09-16,hgonzales@example.net,7527611305,817,2,279,Fashion
+C0229,19,F,17668,Sullivanberg,2023-07-13,lauren83@example.org,366.757.2049,865,3,131,Fashion
+C0230,45,M,15878,Port William,2024-01-01,lglass@example.net,362-806-3958x468,1349,2,148,Home
+C0231,40,M,21996,Lake Brookemouth,2025-05-11,fsimmons@example.org,+1-253-578-6495,46059,93,29,Electronics
+C0232,54,F,20576,New Jamie,2024-10-12,joshua54@example.net,940-375-1555,111,3,361,Home
+C0233,49,F,18374,Debrahaven,2022-10-13,kimburke@example.net,(852)528-4800,479,1,308,Beauty
+C0234,50,M,29101,Johnmouth,2023-06-11,justingreen@example.org,+1-212-341-1480x16399,679,6,162,Electronics
+C0235,18,M,32277,New Douglas,2024-11-06,lonniefields@example.net,773.387.7144x4721,669,2,357,Electronics
+C0236,36,F,22819,West Barbaraview,2021-07-05,crystal44@example.com,453.984.7331,368,2,340,Home
+C0237,19,M,39775,New Kimberlyberg,2022-11-14,donna15@example.com,+1-748-994-3135,35,2,61,Fashion
+C0238,61,M,13951,Danielshire,2024-07-25,cjohnson@example.net,4499789523,231,4,125,Fashion
+C0239,43,M,20384,East Tammy,2022-11-15,anthony22@example.org,001-436-442-2973,1267,1,71,Electronics
+C0240,49,F,16535,Roberthaven,2024-01-02,ingramrebecca@example.net,248-597-9389x56923,439,2,326,Fashion
+C0241,23,F,10439,West Kellyfurt,2021-02-06,travisrodriguez@example.net,(396)254-1497x129,386,4,364,Electronics
+C0242,49,M,21309,South Dariusport,2021-07-03,heidihunter@example.org,001-252-880-4952x0124,156,3,243,Fashion
+C0243,21,M,20979,Watkinsshire,2022-09-03,christinachavez@example.net,001-515-770-3521x61286,229,3,249,Beauty
+C0244,28,M,40351,New Jerry,2022-11-11,longmichelle@example.net,863.650.7822,1128,3,221,Electronics
+C0245,34,F,28348,New Victorville,2025-03-09,garzathomas@example.com,410-832-7210x100,549,6,21,Fashion
+C0246,55,M,14622,New Brandon,2021-05-04,hthompson@example.com,452-365-6458x97946,774,3,82,Sports
+C0247,41,M,46241,Markport,2021-03-06,vargasalisha@example.com,+1-833-368-3777x13001,20265,72,344,Home
+C0248,22,F,35897,Jimstad,2022-04-28,amanda89@example.com,+1-876-223-2700x63670,497,1,10,Beauty
+C0249,69,M,27801,Holmesburgh,2023-12-23,emilythomas@example.com,+1-967-609-2804x36650,142,2,12,Fashion
+C0250,51,F,20118,North Susanhaven,2020-11-05,kscott@example.org,+1-472-874-3939,611,4,263,Beauty
+C0251,23,M,15006,Port David,2022-03-14,lsanchez@example.org,634.705.8376,278,3,145,Electronics
+C0252,39,M,18979,North Joseph,2022-11-14,stacey43@example.net,708-322-4801x157,292,3,192,Electronics
+C0253,28,M,34047,Lake Mariah,2024-04-03,epineda@example.org,392.830.5822x66829,523,2,250,Electronics
+C0254,65,F,46809,Kennedymouth,2022-09-04,gutierrezashley@example.com,3363185875,1376,3,114,Fashion
+C0255,33,F,40835,West Catherine,2023-05-08,sweeneykim@example.com,959-331-1738,33,1,26,Beauty
+C0256,50,F,18114,Lake Michaelmouth,2025-06-23,gomezamanda@example.net,(875)639-2543,870,2,271,Fashion
+C0257,26,M,14074,Salazarland,2024-12-10,smorales@example.net,001-943-588-9676,172,2,33,Home
+C0258,23,F,23303,Crystalfort,2024-03-16,wallaceaustin@example.com,+1-724-680-9016,293,3,62,Home
+C0259,33,M,10857,Smithport,2022-10-06,garyhamilton@example.org,641-805-5750x3770,11,5,229,Home
+C0260,46,M,25065,North Edwardstad,2024-04-21,wgrimes@example.net,754-741-8951x979,179,3,303,Fashion
+C0261,20,F,20763,South Patrickmouth,2025-07-21,allentamara@example.com,001-971-810-9596,349,6,95,Home
+C0262,37,M,18280,Thompsonstad,2021-05-07,nicholas50@example.net,554.972.8072x7984,20885,75,35,Fashion
+C0263,53,M,11639,Osbornechester,2020-12-10,zdavis@example.net,+1-792-555-2328,28394,61,193,Electronics
+C0264,36,M,27049,Fullerberg,2023-08-07,mclark@example.net,782.998.9520x31059,1309,6,76,Sports
+C0265,43,M,17799,Longstad,2023-10-22,jordankaren@example.org,9929721852,55,6,249,Electronics
+C0266,20,M,13794,New Javier,2023-11-08,mccoycarl@example.net,001-323-697-2692x489,722,3,83,Electronics
+C0267,36,F,6982,New Latasha,2024-10-02,ireyes@example.com,635-935-1489,263,4,25,Beauty
+C0268,37,M,21785,Molinaport,2024-03-09,nelsonsarah@example.org,(911)928-8270x59177,532,3,57,Fashion
+C0269,49,F,44752,Wagnermouth,2020-10-13,emilymays@example.net,212-465-8843x372,150,2,32,Home
+C0270,24,F,42809,West Michellehaven,2021-06-02,kestes@example.com,(670)219-2744x3668,86,5,319,Fashion
+C0271,69,M,18345,Millerchester,2020-10-23,angelalang@example.org,423-970-8345x5311,87,4,12,Fashion
+C0272,58,M,17311,Frymouth,2024-04-03,justin20@example.net,599.763.8392x049,36,2,319,Electronics
+C0273,50,M,26569,Port Emilyburgh,2024-08-17,gdavis@example.com,979-444-2935x26120,102,0,333,Fashion
+C0274,57,F,14774,Port Ronaldfurt,2021-02-26,johnsonkristin@example.org,493-732-6223x10951,545,0,92,Fashion
+C0275,56,M,24852,Obrienstad,2022-10-26,shawnvaldez@example.org,430-520-3989x56873,1067,5,1,Home
+C0276,35,F,29924,Rachelstad,2025-04-10,jonesedgar@example.com,(477)307-0090x050,841,6,326,Fashion
+C0277,57,M,35981,Cannonside,2025-05-07,john40@example.com,001-987-508-6121x3657,577,1,136,Sports
+C0278,18,F,21161,Port Sylviaview,2024-10-23,michele50@example.org,001-852-383-2397x057,58,2,196,Electronics
+C0279,28,M,20303,Goodwinton,2023-01-30,richard51@example.com,560-448-3798,170,5,133,Fashion
+C0280,45,M,15503,Lynnchester,2023-12-20,andersoncassandra@example.net,(668)520-6324,185,4,86,Home
+C0281,42,F,15823,New Colleenhaven,2024-05-17,kristiwilliams@example.net,3273492147,143,3,295,Sports
+C0282,67,F,20118,Joshuahaven,2021-09-24,sosadaniel@example.org,(948)946-3437x23262,361,2,279,Electronics
+C0283,40,M,25513,Morenoside,2021-08-25,usalas@example.com,(817)465-0902,383,0,324,Home
+C0284,48,F,31743,Port Jacobton,2024-06-27,harrisrebecca@example.com,001-825-998-3456x7041,220,4,180,Beauty
+C0285,47,F,15974,Garciashire,2024-09-07,christopher51@example.com,217.374.1826x059,218,5,4,Electronics
+C0286,59,F,40017,East Tammy,2021-08-24,yatesnicole@example.com,+1-886-608-9332x472,881,2,126,Beauty
+C0287,52,F,19762,New Monique,2023-02-20,fowlerkelly@example.com,221.842.9704x628,778,3,175,Electronics
+C0288,24,M,21839,East William,2025-05-23,perkinsjorge@example.net,+1-279-371-1075x0592,183,7,251,Home
+C0289,33,M,16335,South Javiermouth,2024-02-10,damon19@example.com,389-473-2543,1225,5,21,Sports
+C0290,43,M,8352,Mitchellside,2023-12-05,sloanjohn@example.net,+1-300-292-4427x8190,1526,3,105,Home
+C0291,65,F,31370,Port Blake,2024-03-07,acollier@example.com,+1-262-814-6966x9258,197,1,66,Fashion
+C0292,69,F,29576,South Erikborough,2022-03-14,lmathews@example.com,001-829-581-7419x9756,218,3,263,Electronics
+C0293,66,M,19682,Lake Eric,2023-09-13,dmassey@example.org,(532)364-2106,352,4,49,Sports
+C0294,19,M,22624,Scottberg,2021-07-13,mckenziestephen@example.org,370.891.1742,1416,1,16,Fashion
+C0295,18,F,27075,North Chad,2021-02-01,sanchezthomas@example.com,(365)487-3097x6067,1045,3,145,Electronics
+C0296,65,Other,11789,Lake Kerryshire,2020-10-18,travis34@example.com,+1-222-201-8800x31530,54,3,340,Home
+C0297,29,F,17825,West Kelsey,2022-09-22,noah68@example.org,8345366276,249,4,250,Fashion
+C0298,22,M,30263,South Alexa,2021-11-05,zsaunders@example.com,001-645-527-5217x016,403,1,343,Electronics
+C0299,54,M,13336,East Larry,2024-07-25,nolanadrian@example.org,563-252-7001,349,2,354,Electronics
+C0300,49,M,24770,North James,2021-04-19,powerschristopher@example.org,(579)564-9308,107,3,75,Electronics
+C0301,26,F,12802,West Vicki,2021-04-23,angelasharp@example.com,400-276-8079x581,978,2,290,Home
+C0302,58,M,26544,South Nicole,2024-01-08,icarroll@example.org,+1-249-870-9563x897,564,1,282,Home
+C0303,52,F,21714,Heatherfort,2024-12-10,parrishbrian@example.org,721-473-4938,909,1,66,Fashion
+C0304,36,M,11544,South Josephview,2023-09-20,joannlittle@example.com,320.718.3301,38457,67,125,Beauty
+C0305,65,F,35097,Lake Toddborough,2021-09-11,tonya36@example.com,835.601.6344,689,0,319,Beauty
+C0306,33,F,16418,East Timothy,2020-08-26,gfloyd@example.com,(273)278-4689x065,289,3,87,Home
+C0307,20,F,15929,North Carlos,2021-05-14,karen82@example.com,348.661.9093,471,1,41,Electronics
+C0308,37,M,23866,South Deniseland,2023-02-15,jacqueline85@example.com,925.245.2775,87,1,186,Home
+C0309,41,M,34872,Ashleyview,2025-04-03,laurenramsey@example.net,+1-299-839-5531x27352,559,7,354,Fashion
+C0310,50,M,14671,Port Donnaborough,2023-08-28,jamesjennifer@example.net,(848)431-3902,98,3,335,Home
+C0311,41,F,22576,Rhondashire,2022-01-23,hoffmanemily@example.net,237-566-7529,592,2,266,Home
+C0312,69,F,26147,Lake Jameschester,2020-08-20,monicacopeland@example.org,539-232-1350,130,4,271,Fashion
+C0313,28,F,29063,Lake Darlenemouth,2025-08-02,awallace@example.net,612-965-1566,62,4,42,Sports
+C0314,66,F,23637,West Calebport,2021-10-09,thomasdale@example.org,7834786625,90,0,93,Electronics
+C0315,25,F,19018,East Jamesland,2025-08-17,nguyensamantha@example.org,001-383-216-9559,0,3,185,Home
+C0316,53,M,15818,Jonstad,2022-03-11,howardgallegos@example.com,375.462.7271x7995,634,3,215,Electronics
+C0317,55,F,22798,Lloydville,2021-10-09,hicksmatthew@example.net,(629)914-9568x9850,659,7,17,Sports
+C0318,57,M,14344,South Michaelhaven,2021-06-04,perrymary@example.com,001-276-430-5072,361,3,265,Electronics
+C0319,37,M,6846,Westberg,2023-08-04,mosssarah@example.com,431.575.6231x75199,87,2,114,Electronics
+C0320,52,F,26229,Nathanmouth,2021-06-29,danielcowan@example.com,(885)720-0481,43,4,292,Fashion
+C0321,65,M,31620,Lake Nathanmouth,2023-02-12,padillajessica@example.net,598.261.8614x609,9,2,292,Fashion
+C0322,42,M,8559,Josephport,2024-09-07,davismary@example.net,+1-532-260-3335x12666,90,2,48,Electronics
+C0323,52,F,14707,New Tiffanymouth,2025-05-07,erich@example.net,793-207-8209x65808,1107,3,307,Home
+C0324,42,M,28216,New John,2025-08-07,gmason@example.org,740.864.7332,138,0,97,Fashion
+C0325,46,F,50161,Mcculloughview,2024-05-12,morrissara@example.com,001-679-217-2776x4126,218,0,95,Electronics
+C0326,35,M,22210,Graymouth,2023-09-26,everettjesse@example.net,(306)680-2918,55,3,326,Fashion
+C0327,63,M,16461,Rowlandchester,2024-09-23,yvetteweaver@example.com,+1-266-837-9315x218,125,4,74,Beauty
+C0328,35,M,20472,Port Janice,2025-05-31,brian06@example.org,001-842-297-8146x93860,366,6,336,Home
+C0329,19,M,38175,Port Michael,2021-08-14,cody74@example.net,001-360-945-6851x496,467,4,68,Home
+C0330,52,F,17010,Nicolechester,2021-10-14,mhernandez@example.com,967-472-7926,140,2,246,Home
+C0331,33,M,15999,East Lisaport,2023-06-23,dpeck@example.net,377.526.7975x719,29,2,77,Fashion
+C0332,58,F,18158,West Markberg,2025-07-18,valenciamichelle@example.net,001-653-911-2837x2810,247,8,208,Electronics
+C0333,53,M,15043,South Staceyton,2023-03-11,peter95@example.com,356-521-0119,133,4,254,Electronics
+C0334,50,F,23134,West Jack,2025-07-30,stevenjones@example.net,(304)479-4643x774,123,3,221,Beauty
+C0335,21,F,42187,Lake Daniel,2023-03-23,yliu@example.net,+1-913-215-4698x03436,1607,1,262,Sports
+C0336,50,F,25065,Romeroton,2020-10-11,nfuentes@example.org,611-970-0359x6022,478,2,331,Fashion
+C0337,31,M,19911,Billystad,2021-09-28,jamiecopeland@example.com,9728328313,406,1,344,Electronics
+C0338,38,M,19599,Josephtown,2021-02-23,williamyoung@example.com,922.447.3947,268,3,259,Electronics
+C0339,65,M,11786,Fieldschester,2023-10-28,josephramsey@example.com,+1-492-459-7406,280,4,308,Fashion
+C0340,37,F,31358,Christinemouth,2023-09-30,corteztonya@example.com,(701)431-5928x82196,389,0,74,Home
+C0341,25,M,21351,Emilyside,2022-07-28,williamsbenjamin@example.com,543-812-5383x79202,46075,93,125,Electronics
+C0342,24,F,20492,East Karenview,2023-05-11,amartinez@example.com,745.861.4695x97117,605,5,188,Sports
+C0343,20,F,79003,Hernandezchester,2025-04-29,rebecca53@example.net,686-943-7779x1086,94,5,254,Fashion
+C0344,34,M,24822,South Patricktown,2021-01-27,scottsimmons@example.org,853.568.7367x56943,10395,62,321,Sports
+C0345,50,F,16305,New Dustinbury,2022-04-27,westelizabeth@example.com,335-319-4322x914,265,1,308,Beauty
+C0346,65,M,18572,Lake Alexborough,2022-09-18,istokes@example.net,+1-434-214-8798,1022,3,235,Beauty
+C0347,29,M,34869,North Jenniferfurt,2024-11-01,patricia03@example.com,749.911.4857x961,499,2,250,Home
+C0348,68,F,23047,Port Frederickland,2021-09-08,grosszachary@example.net,001-245-281-4918,380,5,332,Home
+C0349,39,F,12390,New Amyville,2021-07-24,caldwellroger@example.com,(848)358-3917,61,1,345,Home
+C0350,39,F,31814,Carolshire,2024-01-03,chadduncan@example.com,289.246.1657,465,3,72,Home
+C0351,63,M,16860,Millershire,2025-06-13,garciaamanda@example.org,267-959-5508x2523,62,3,235,Home
+C0352,47,M,46598,Perryland,2023-04-02,rreed@example.net,+1-242-445-5937x37875,205,4,324,Sports
+C0353,55,F,33928,Franklinview,2025-01-16,lopezscott@example.com,826.287.9559,77,2,156,Home
+C0354,55,F,18417,Josephberg,2021-09-21,hdavis@example.org,+1-898-503-2165,588,2,115,Beauty
+C0355,62,F,36768,North Tylershire,2021-01-27,georgeamanda@example.net,425-909-7127x7169,115,1,313,Beauty
+C0356,68,M,22632,East Billy,2021-01-12,racheltorres@example.org,(817)885-6103x9942,248,0,228,Electronics
+C0357,25,F,30980,North Danielshire,2021-10-09,fmorgan@example.net,(907)535-2160x81016,1130,2,322,Electronics
+C0358,44,M,26739,Lake Gregory,2025-05-08,joylopez@example.org,+1-948-792-1065,114,2,346,Fashion
+C0359,44,M,15700,Kristinashire,2020-08-29,colemanshawn@example.com,+1-367-419-9066,354,1,245,Fashion
+C0360,51,F,17027,South Richardchester,2025-06-01,mooresamantha@example.net,493.510.6529,271,5,306,Beauty
+C0361,38,M,33255,South Larryland,2022-02-17,ugarner@example.org,+1-281-270-7806x190,9,7,14,Fashion
+C0362,47,F,19265,New Matthew,2021-07-05,vscott@example.org,+1-890-750-7365x19282,786,2,16,Home
+C0363,50,M,18742,Carloshaven,2023-12-23,richardpaul@example.net,6775174605,35,2,42,Fashion
+C0364,45,M,15032,West Cynthiahaven,2022-10-10,christophercarter@example.com,+1-605-869-1546x2421,321,2,110,Electronics
+C0365,64,F,26093,Port Stephen,2023-04-16,russell51@example.org,(396)686-7575x74961,411,1,278,Home
+C0366,50,F,50262,New Cheryltown,2023-05-04,hkeller@example.com,(282)390-1052,495,2,324,Beauty
+C0367,22,F,14371,Davidhaven,2022-02-11,walterstevenson@example.org,823.496.6093x7216,583,2,19,Electronics
+C0368,65,F,22240,East Sarah,2020-12-06,guerreromelissa@example.com,260.757.4182x45460,146,5,66,Home
+C0369,36,F,38750,Vasquezbury,2023-10-07,ashleysmith@example.org,(265)892-6713,5,0,167,Home
+C0370,21,F,21335,Williamsburgh,2024-07-22,alexandersteven@example.net,242.440.1490x32160,642,3,73,Electronics
+C0371,52,F,26395,Port Tiffany,2023-04-11,martinezkelly@example.org,(322)983-4056,383,2,310,Electronics
+C0372,66,M,14400,South Mark,2025-01-01,vbennett@example.net,499-256-9895x0683,904,5,112,Sports
+C0373,34,F,26142,New Christopher,2021-10-18,bcox@example.net,+1-291-304-3862,861,3,274,Fashion
+C0374,61,M,20437,New Courtney,2022-08-11,jcox@example.org,+1-300-300-6881x07857,926,5,85,Electronics
+C0375,45,Other,32672,Port Morgan,2021-11-08,anthony22@example.net,+1-496-906-1910,331,6,139,Electronics
+C0376,47,F,35417,Jasonmouth,2021-04-17,jperez@example.com,767.274.4254x9018,202,3,39,Home
+C0377,46,M,62058,Port Valerie,2025-02-06,phyllisjuarez@example.net,431-539-9547x744,784,5,105,Home
+C0378,63,F,27773,South Maria,2022-11-01,zacharysullivan@example.net,341-247-9261x308,300,2,324,Home
+C0379,23,F,25092,Hinesborough,2023-03-03,ecook@example.net,2265892814,101,0,281,Electronics
+C0380,52,M,23807,New Kimshire,2025-04-27,brucejackson@example.org,001-747-334-8909x43922,965,6,123,Beauty
+C0381,58,F,19124,South Tanya,2022-05-05,rjohnson@example.com,9873714667,1070,5,218,Fashion
+C0382,54,F,25220,Rebeccahaven,2022-04-18,trujillocynthia@example.com,+1-525-736-9011x717,313,3,61,Fashion
+C0383,41,M,19571,Mathewside,2024-03-05,levykayla@example.org,(983)522-9201x080,39,6,100,Fashion
+C0384,46,F,23561,Christopherland,2021-06-09,savagekimberly@example.com,(783)956-6475x26300,245,3,307,Fashion
+C0385,66,M,37310,Angelatown,2022-04-02,josephjefferson@example.com,758.629.4558,813,1,354,Beauty
+C0386,63,F,14726,Sanchezfort,2025-02-26,delacruzian@example.org,+1-830-432-8734x451,1160,0,204,Sports
+C0387,48,F,34750,Alisonview,2024-05-08,annadaniels@example.com,415-792-5084,113,2,258,Fashion
+C0388,52,F,37303,Gordonland,2023-09-08,rjones@example.net,001-242-941-5976,34,2,5,Beauty
+C0389,50,M,21010,Port Brian,2023-07-23,julie76@example.net,+1-489-618-4587x38779,26603,79,197,Beauty
+C0390,69,F,9426,Millerfurt,2025-05-04,amandabaxter@example.org,001-753-489-4542,246,5,180,Sports
+C0391,38,F,17272,Seanshire,2025-07-11,jamesfernandez@example.net,(329)250-7124x313,390,1,342,Electronics
+C0392,49,M,37004,North Mirandaborough,2020-11-15,ogould@example.com,+1-371-844-9324x64827,1722,4,133,Home
+C0393,40,F,21825,North Donna,2020-08-25,matthew66@example.net,001-571-396-5009x03455,34,3,324,Electronics
+C0394,50,M,14768,Kingborough,2021-10-31,ann85@example.org,(579)909-0391x748,522,2,253,Beauty
+C0395,20,F,17999,East Randallton,2020-11-19,carrollstephanie@example.com,559.660.9074,38,3,265,Electronics
+C0396,35,M,30830,Port Petershire,2024-04-16,adam43@example.com,(974)650-6110x76051,235,2,93,Home
+C0397,42,M,27410,East Melindaborough,2024-12-03,rosetimothy@example.com,498.909.3384x3635,814,3,150,Fashion
+C0398,59,M,20018,Snyderhaven,2024-03-01,erikawhite@example.org,958-711-6681x596,284,5,138,Fashion
+C0399,48,F,19020,Ebonyshire,2024-01-22,eileenperez@example.com,825.525.6248x581,2935,2,208,Home
+C0400,20,M,18831,East Brian,2021-12-22,tranlee@example.com,254-878-8728,409,5,125,Beauty
+C0401,57,F,15230,East Hannah,2025-06-14,ruthadams@example.org,+1-769-420-4109x6629,193,1,234,Home
+C0402,63,M,42030,Collinside,2024-10-19,tammyjones@example.com,001-561-872-4111x8534,124,0,61,Beauty
+C0403,41,M,19362,East Seth,2022-10-26,gracesimon@example.net,+1-460-709-0347x203,215,4,307,Electronics
+C0404,67,F,35841,Port Kennethbury,2024-12-13,jennifer22@example.com,001-252-254-7755x169,233,6,266,Fashion
+C0405,49,F,40478,New Sara,2023-03-01,rodriguezashley@example.net,949-700-9755x84280,31442,93,134,Fashion
+C0406,64,M,32837,Port Rachelborough,2021-06-20,davidfox@example.org,3052458858,230,3,318,Electronics
+C0407,39,F,18533,South Stephenburgh,2024-08-21,mitchell60@example.net,+1-653-242-4821x68289,312,5,113,Home
+C0408,40,F,25886,Rollinsland,2022-12-22,scotthill@example.org,001-321-293-5810x072,641,2,191,Home
+C0409,19,F,21814,Whiteview,2022-04-08,kaitlyngarcia@example.net,001-262-544-1680,534,2,187,Home
+C0410,44,M,15344,West Gregoryberg,2023-08-26,yoderjacob@example.net,+1-776-258-2993x28552,616,2,319,Home
+C0411,59,M,25077,North Victoriaberg,2022-03-05,jamie52@example.com,+1-410-947-5359x4760,4,4,89,Home
+C0412,19,F,13744,New Misty,2024-06-09,colleensantos@example.org,888.230.2175x862,18539,73,187,Electronics
+C0413,43,M,35421,Hornstad,2024-05-31,rachelhayes@example.com,001-683-940-2880x1041,541,5,307,Electronics
+C0414,34,F,18290,Wangside,2022-04-29,torreswayne@example.com,+1-742-872-7518x215,330,2,132,Home
+C0415,57,F,23872,Mccarthyland,2021-02-07,coreyfrazier@example.com,(672)761-3560,2,2,360,Electronics
+C0416,50,F,24669,Hawkinsberg,2021-04-28,lhuang@example.org,+1-356-560-4427x33899,816,3,123,Electronics
+C0417,26,F,19859,Vanessaborough,2021-11-11,barnettdaniel@example.net,(786)596-6281,740,3,48,Fashion
+C0418,60,Other,27852,Josephview,2021-04-30,edwardmartinez@example.com,001-306-250-7710x3686,397,4,288,Home
+C0419,65,M,18215,Samanthahaven,2021-02-27,melissa02@example.org,+1-216-556-2366x36124,34,1,179,Fashion
+C0420,56,F,31210,Petersonmouth,2022-01-22,heathereverett@example.net,+1-458-384-4785x965,727,0,180,Home
+C0421,46,M,12856,Burnsfurt,2025-05-13,burnskyle@example.com,(731)348-6591,438,1,99,Home
+C0422,59,M,23168,Lake Carlosmouth,2021-12-15,pcortez@example.com,(810)463-8317x5902,761,4,330,Fashion
+C0423,43,F,47837,North Cynthiaberg,2021-09-13,stevewhite@example.net,001-937-331-0147x5402,696,3,34,Beauty
+C0424,52,F,14762,North Nicolestad,2021-07-05,mpena@example.org,450.754.3334,812,4,70,Home
+C0425,67,Other,16796,West Arthur,2025-04-11,janet66@example.net,001-922-530-3926x1107,364,1,171,Home
+C0426,42,F,27053,New James,2023-02-26,taylortyler@example.org,330.287.4272x381,75,5,272,Home
+C0427,41,M,23666,Joelshire,2020-11-30,vanessa28@example.org,+1-741-295-2680x18768,556,3,59,Electronics
+C0428,30,M,25342,North Jeffrey,2023-02-11,melissa48@example.com,+1-733-706-9383x476,484,4,181,Home
+C0429,24,F,26787,Lake Jennifer,2025-01-28,ortizcourtney@example.com,6534829605,28702,68,19,Fashion
+C0430,53,M,28392,Amandabury,2025-05-08,richardvargas@example.net,(409)716-7301x201,93,4,226,Sports
+C0431,62,M,34333,North Dwayne,2021-04-05,kbrady@example.org,512-247-2090,38988,63,95,Beauty
+C0432,37,M,25950,New Mariahaven,2021-09-22,sherrycampbell@example.com,(262)513-8372,1105,4,297,Home
+C0433,18,M,20000,West Paulview,2023-11-25,oreid@example.org,256-568-6052,693,3,81,Electronics
+C0434,25,M,28825,South Brian,2025-06-02,williamsjeffrey@example.net,(599)571-8446x173,1194,2,175,Electronics
+C0435,63,M,47096,Raymouth,2021-05-13,dawsonrachel@example.net,+1-370-538-7452x30250,710,5,222,Fashion
+C0436,33,M,20888,East Jamesfurt,2023-01-19,samanthawilliams@example.net,001-225-712-5819x1391,454,4,103,Fashion
+C0437,31,M,14915,Russellchester,2023-04-02,robertwilliams@example.com,893.805.9324,530,3,54,Electronics
+C0438,29,Other,34297,Morganland,2024-08-15,qgonzalez@example.com,927-273-2622x67343,1099,4,183,Fashion
+C0439,68,M,20990,Cynthiamouth,2023-10-22,roywesley@example.com,001-931-660-1487x298,432,4,351,Electronics
+C0440,40,M,9236,Christianhaven,2021-02-28,brownjoseph@example.net,+1-423-966-1540,500,3,318,Sports
+C0441,32,F,30914,South William,2021-03-30,peckshannon@example.net,478-984-4459x90270,85,1,355,Electronics
+C0442,45,M,17780,East Charlesstad,2024-10-13,batescharles@example.org,001-948-856-6652x732,321,2,349,Sports
+C0443,51,F,21243,Isaacview,2024-06-21,shafferbryan@example.net,+1-230-219-8448,630,0,321,Sports
+C0444,19,F,25154,Friedmanbury,2021-06-08,wilsonkyle@example.org,001-457-382-2841,158,4,68,Fashion
+C0445,49,M,23770,Kevinburgh,2024-03-27,brianna08@example.net,001-883-404-9167x906,15644,90,28,Home
+C0446,40,M,29254,Meganmouth,2022-06-05,johnreeves@example.org,001-454-898-0017x44841,188,5,274,Fashion
+C0447,39,F,18505,Phillipstown,2023-03-16,fischerheidi@example.net,+1-260-316-7497x0423,138,1,282,Home
+C0448,68,F,27044,Salazarmouth,2021-12-22,iburke@example.org,400.532.1641x9870,120,4,360,Fashion
+C0449,42,M,19854,Port Kimberlystad,2024-11-22,longjason@example.com,(382)894-7402,276,1,311,Fashion
+C0450,39,F,29599,South David,2022-09-24,erica68@example.org,(624)401-5271x105,1192,6,119,Home
+C0451,39,M,28173,Annaside,2021-08-03,ilawson@example.com,001-243-815-0099x05996,353,4,134,Fashion
+C0452,66,Other,15151,Castilloshire,2024-07-19,bonnie60@example.net,001-269-736-0023x66118,104,1,129,Home
+C0453,69,M,34009,Oneillborough,2025-05-25,steven32@example.net,3755885716,40,3,8,Electronics
+C0454,59,F,17776,Edwardsbury,2022-02-23,nathanielmunoz@example.org,(770)271-1478x4752,595,3,51,Fashion
+C0455,23,F,30431,Kellyland,2022-08-04,urowe@example.org,001-541-651-9280x7762,241,4,341,Electronics
+C0456,32,F,25512,South Charlesberg,2023-09-06,christensentimothy@example.com,+1-820-935-2614,862,2,281,Electronics
+C0457,60,F,45948,Port Margaret,2024-05-30,stephanienewton@example.net,+1-288-942-0796,538,4,175,Electronics
+C0458,54,M,20143,West Tyler,2024-07-12,perrymonica@example.net,5068761869,795,3,183,Electronics
+C0459,50,M,19154,East Hector,2022-01-11,daniel02@example.org,001-803-922-1849x0946,158,3,192,Electronics
+C0460,25,M,21856,Danielhaven,2024-12-12,jared11@example.com,467.601.0624x552,589,2,249,Beauty
+C0461,61,M,19510,Jeffreyburgh,2024-08-06,asanders@example.net,963.236.1639,153,4,235,Electronics
+C0462,61,F,30332,Sheachester,2021-06-11,uortiz@example.com,270.920.8927x4432,1399,3,83,Home
+C0463,22,M,11538,Pamelaburgh,2022-11-04,sandra28@example.org,3213071403,505,1,93,Electronics
+C0464,56,M,14451,Michellechester,2023-02-11,schmidtphillip@example.net,339.513.1272x587,196,1,312,Beauty
+C0465,21,F,14369,Julieborough,2025-02-08,zramirez@example.net,678-530-1249x36136,157,2,268,Fashion
+C0466,23,F,32212,West Robinport,2024-06-20,htran@example.net,(691)310-3217x27134,105,2,120,Fashion
+C0467,62,F,43662,Victoriaton,2022-07-18,jessesandoval@example.com,434.824.7593x763,34005,74,71,Fashion
+C0468,49,Other,21125,New Ellen,2022-10-10,courtneyjohnson@example.com,963-369-2012x9723,123,6,17,Fashion
+C0469,69,M,20588,West Donnaton,2023-05-16,marisaponce@example.org,221-790-7442,452,2,253,Home
+C0470,47,M,22652,North Dwayneburgh,2024-02-18,robinsondale@example.org,370-271-9751,153,5,122,Electronics
+C0471,64,F,35057,South Christopherburgh,2023-04-24,kennethstokes@example.org,+1-424-886-2009,542,7,10,Sports
+C0472,52,F,15200,Grayton,2023-11-30,holderbrian@example.org,545.237.8767,843,5,287,Fashion
+C0473,57,M,24230,New Erica,2022-11-12,fosborne@example.com,(402)349-5919x6246,752,4,316,Fashion
+C0474,69,F,32535,Rachaelland,2021-11-09,halllisa@example.com,838-799-4289,715,3,326,Home
+C0475,33,M,26914,Lopezside,2020-09-24,brian56@example.org,234-526-9013x0746,103,4,273,Fashion
+C0476,30,M,23761,Michaelview,2024-10-13,galvanrobert@example.net,698.256.8107x380,36250,96,306,Beauty
+C0477,67,F,32873,West Daniel,2021-08-29,rachel14@example.net,001-292-694-0718x696,600,2,293,Fashion
+C0478,59,F,7470,South Angela,2022-03-22,crystal33@example.org,515-298-7390,229,4,210,Home
+C0479,47,F,28887,North Marilynview,2023-11-07,skinnerstephen@example.net,719.722.2874,283,1,218,Electronics
+C0480,36,M,16955,Johnstad,2023-07-11,wallen@example.net,+1-298-209-1375,15,4,241,Beauty
+C0481,34,F,10590,North Jenniferfort,2024-01-03,joyce14@example.net,2539550357,150,6,200,Home
+C0482,36,M,27024,Port Melissa,2023-11-25,jessica16@example.com,+1-417-646-6641x7088,17,3,216,Electronics
+C0483,45,M,38156,Hendrixside,2023-10-11,katherine66@example.net,677.524.9259x0516,1056,1,205,Electronics
+C0484,43,F,20848,Joshuashire,2022-02-24,ymiller@example.org,422-924-8181x07383,139,2,216,Fashion
+C0485,54,F,32246,Lake Darlenehaven,2022-07-29,montoyashannon@example.com,479.512.1790x3876,407,4,80,Sports
+C0486,43,F,41978,Rodriguezland,2025-01-31,michellebrown@example.com,766.385.2866x2416,19,3,267,Electronics
+C0487,40,F,37270,Port Karen,2022-02-28,erichouston@example.org,(937)761-9658,549,1,35,Fashion
+C0488,26,F,42445,West Ryan,2021-07-03,davidnash@example.com,+1-812-561-2412x75199,195,7,289,Electronics
+C0489,29,F,29639,Carterside,2025-05-12,erinhart@example.org,+1-228-396-3034,1140,2,18,Fashion
+C0490,18,M,22701,Lisaberg,2021-06-21,cwilkins@example.com,711-275-6277x00928,37724,98,165,Home
+C0491,18,M,11605,Bryantview,2020-10-20,sullivanlauren@example.com,482.797.8359x376,196,6,13,Sports
+C0492,64,M,19961,West Richardville,2022-01-26,gmalone@example.org,+1-298-262-5570,1156,1,202,Fashion
+C0493,51,M,15720,New Travis,2021-09-18,cookedavid@example.net,+1-728-679-4580x6002,2780,0,229,Beauty
+C0494,49,F,52489,Port Brandyside,2021-12-05,heather44@example.net,374-745-5214x23392,872,2,346,Fashion
+C0495,65,F,20530,West Gary,2024-03-31,john90@example.org,406.866.8180x31086,931,3,1,Electronics
+C0496,42,M,23139,Estradaberg,2020-12-05,jerome65@example.com,835.257.1407,143,5,319,Fashion
+C0497,57,M,27462,Lisamouth,2024-03-13,khorn@example.com,(574)614-6440,429,0,217,Home
+C0498,62,F,22413,Troyberg,2024-01-05,rose97@example.net,7573425541,34,0,34,Sports
+C0499,18,M,43391,New Wesleyside,2024-08-03,angelawalters@example.org,001-854-582-5816x4389,49,3,359,Beauty
+C0500,33,F,17170,South Erinview,2020-10-12,zjackson@example.com,681-847-1325,3402,4,266,Electronics
+C0501,56,F,23809,New Wayneside,2022-04-26,laurie67@example.org,+1-884-445-7006x40601,197,3,128,Electronics
+C0502,22,F,16366,Anitastad,2024-11-30,wallnicole@example.org,001-925-503-8686,689,4,212,Electronics
+C0503,39,F,12990,Wagnerberg,2021-08-09,velezkelsey@example.net,+1-836-256-0509x9586,821,3,263,Sports
+C0504,46,F,17245,Randyhaven,2025-02-28,rperez@example.org,783-385-4057x150,976,5,312,Beauty
+C0505,20,M,21702,Michelleview,2023-01-11,xchandler@example.net,586-931-0648x203,3022,6,80,Beauty
+C0506,29,F,18551,Gibsontown,2021-10-09,hsmall@example.com,+1-413-228-6989x3743,138,3,165,Fashion
+C0507,43,F,16697,West Kellytown,2021-01-11,jennifer42@example.net,(525)288-8106x4507,20,4,252,Fashion
+C0508,33,M,12549,Danielschester,2025-01-06,kmitchell@example.net,854-707-2728x89056,264,1,12,Fashion
+C0509,68,F,21306,Port Kristina,2025-07-17,jeanette45@example.com,001-927-818-8848x812,69,3,304,Electronics
+C0510,54,F,12065,Johnmouth,2023-10-31,kimsilva@example.net,341-709-9418x98450,11,3,212,Fashion
+C0511,39,F,29852,Payneview,2023-08-08,swansonlarry@example.net,+1-536-933-9084x477,223,2,282,Electronics
+C0512,46,F,22764,South Jennifershire,2022-03-14,michaelmccann@example.net,+1-520-406-4332x68601,765,4,112,Electronics
+C0513,31,F,12295,Fitzgeraldberg,2023-12-20,brianmorales@example.net,+1-446-383-1868x52073,42080,82,211,Beauty
+C0514,45,F,19463,Lake Karen,2021-11-03,chelsea59@example.com,453-829-9578x203,187,5,239,Beauty
+C0515,22,F,16303,South Jonathanmouth,2021-10-04,stephanierowe@example.com,735.556.4485,531,3,268,Fashion
+C0516,64,F,25025,Silvatown,2024-07-05,samuel13@example.org,(912)918-1249,131,3,298,Fashion
+C0517,66,F,37653,Coreyburgh,2023-11-27,hcobb@example.org,+1-434-355-5723x378,7,2,317,Fashion
+C0518,47,F,10403,South Kathleenmouth,2025-01-03,johnsonpaul@example.net,+1-919-452-0506,722,0,58,Home
+C0519,63,F,23063,North Karen,2024-04-09,haasjames@example.net,965-710-2557x204,488,4,34,Beauty
+C0520,69,M,20659,Grantborough,2022-11-13,janice54@example.com,387-804-3312x06196,718,3,263,Beauty
+C0521,22,F,28811,Martinezton,2021-01-20,bradleydavid@example.net,250.405.7325,19,2,35,Home
+C0522,29,F,23987,Thompsonstad,2024-05-03,morrisonjoseph@example.net,965-584-0084,907,4,271,Electronics
+C0523,33,M,16304,New Kevin,2020-11-26,martinbrian@example.net,+1-245-502-8837x69646,483,6,227,Fashion
+C0524,43,F,19387,Lake Shelby,2021-10-10,ojohnson@example.net,496.537.7490x23193,414,4,25,Fashion
+C0525,43,M,16019,Nealborough,2023-04-14,torresjacob@example.com,329.520.0179x364,489,4,234,Fashion
+C0526,65,M,33873,South Heatherstad,2022-07-14,rmaxwell@example.net,(483)971-5463,999,2,59,Beauty
+C0527,38,F,22215,Tinastad,2022-07-09,daniel10@example.org,+1-220-967-7889x0513,442,1,251,Fashion
+C0528,56,M,47121,Port Megan,2025-03-06,david59@example.net,001-683-727-2289x775,434,1,335,Electronics
+C0529,53,F,21498,Williamfort,2022-12-09,moodyvicki@example.com,864.921.9202,2337,1,86,Fashion
+C0530,50,F,16591,Lake Jody,2023-11-22,kenneth63@example.net,+1-240-767-1446x2282,47697,99,251,Sports
+C0531,47,F,12022,Owensside,2022-12-14,dmckee@example.net,3547617578,291,3,180,Electronics
+C0532,54,M,10707,Port Amberborough,2021-02-15,fernandopage@example.com,802.567.4983,614,4,207,Home
+C0533,40,M,11688,New Kathrynmouth,2024-12-13,smalljessica@example.net,7434489459,246,4,344,Fashion
+C0534,27,F,24510,Port Brandonton,2025-02-03,amber13@example.org,718.765.2172x302,129,2,149,Electronics
+C0535,22,Other,26997,Meganmouth,2025-02-01,martinashley@example.com,001-899-347-1586x38705,454,6,71,Fashion
+C0536,53,F,11702,Blanchardport,2023-09-20,riverajeffrey@example.com,(967)502-0151x25146,47491,89,121,Home
+C0537,51,M,31508,Woodview,2022-03-21,meyernicholas@example.org,246.319.1355,1323,1,253,Fashion
+C0538,69,F,18156,Rayville,2021-04-02,aaron74@example.com,(762)477-1223x322,209,3,93,Beauty
+C0539,48,F,23358,Ryanborough,2025-07-31,bcarrillo@example.net,+1-249-595-4388x713,375,2,256,Electronics
+C0540,27,F,41977,Nataliehaven,2023-04-16,kennethcox@example.com,+1-791-422-7949x32453,118,2,254,Electronics
+C0541,36,M,31531,Lake Dillon,2021-05-22,gpearson@example.net,360.454.7980,2716,3,352,Sports
+C0542,49,F,19783,Veronicamouth,2023-01-18,pferguson@example.com,+1-697-497-4210x832,12037,70,288,Fashion
+C0543,18,F,15421,North Aprilville,2024-04-26,mary81@example.org,(968)662-2952,524,3,309,Home
+C0544,22,F,9313,North Christine,2021-12-06,dominic92@example.org,+1-348-214-7864,815,3,59,Beauty
+C0545,62,M,16520,Port Yolandafurt,2021-06-11,jasonzhang@example.org,001-289-499-6479x10634,627,6,69,Fashion
+C0546,21,F,20242,Kylebury,2021-03-22,haleybrown@example.net,001-836-939-0256x989,449,6,86,Home
+C0547,33,F,14840,New Sue,2021-07-27,heathchristine@example.com,(233)327-1169x8869,27,3,274,Electronics
+C0548,41,M,20899,New Jennifertown,2025-02-21,umartin@example.net,(964)971-7789,303,3,227,Electronics
+C0549,33,F,22714,Tammyport,2021-12-16,richardsondaniel@example.com,001-480-616-3314x7735,561,3,81,Electronics
+C0550,19,F,20131,North Franciscoview,2022-09-02,danielmorton@example.net,001-351-767-4848x87533,565,2,114,Beauty
+C0551,66,M,16983,Vaughnshire,2022-02-18,toni96@example.com,001-962-333-4332x49211,233,3,184,Electronics
+C0552,45,M,23563,Lucasfurt,2022-04-28,marshallchase@example.net,508.562.2302x6843,1421,3,280,Home
+C0553,49,F,26285,Mcintyrehaven,2024-01-24,ballardshelia@example.org,9619327243,91,3,322,Sports
+C0554,44,M,14240,Grantmouth,2025-03-18,sarah17@example.net,313.726.1926x74852,346,1,318,Fashion
+C0555,37,F,38730,Hallchester,2023-10-30,matthew06@example.org,391-346-5578,587,4,54,Fashion
+C0556,41,M,21174,North Patrick,2021-11-01,contreraskristin@example.com,858.724.2148x832,597,1,197,Fashion
+C0557,29,F,22193,Kathrynstad,2025-08-07,annette25@example.net,(361)898-3723x6104,522,4,293,Fashion
+C0558,67,M,29239,East Kristenview,2023-08-12,jessica83@example.org,+1-530-621-4435,160,2,293,Fashion
+C0559,52,F,24180,Lake Brianburgh,2023-10-23,nicolecoleman@example.com,602.482.3353,84,2,291,Home
+C0560,50,F,32249,Lucasfort,2021-01-22,contrerasangela@example.com,001-586-338-7731,505,5,180,Sports
+C0561,50,F,24707,West Todd,2022-09-21,obenitez@example.com,587.432.1928,457,4,222,Sports
+C0562,68,F,17240,Amyfort,2020-08-19,nathansantiago@example.org,001-295-837-2588x424,98,1,274,Beauty
+C0563,60,M,25453,South Breannashire,2023-12-23,shelley44@example.com,+1-412-485-5306,610,1,244,Beauty
+C0564,54,F,13939,Schneiderland,2024-10-10,tony60@example.com,(932)396-6927,303,5,154,Fashion
+C0565,29,M,23004,New Ericatown,2024-04-04,grich@example.org,001-639-203-2645x050,550,3,304,Home
+C0566,20,M,21735,North Maria,2021-07-08,meganrodriguez@example.org,(492)935-0360,908,1,273,Beauty
+C0567,18,M,20267,North Ashleyhaven,2021-11-25,brittany86@example.net,6425127897,93,1,135,Fashion
+C0568,50,F,20922,Martinezville,2024-03-06,kingjustin@example.com,(399)218-6623x964,9,5,313,Sports
+C0569,57,F,10376,Nancyton,2023-07-11,qfowler@example.org,3178263726,755,4,8,Fashion
+C0570,27,F,17685,Port Megan,2023-04-30,mfox@example.net,310.389.9205,470,4,128,Home
+C0571,60,M,22859,Meyersshire,2021-08-07,josegutierrez@example.org,447-802-1533x448,601,1,56,Home
+C0572,61,M,23480,North Anthonyfurt,2023-03-24,danielward@example.net,(879)722-7601,910,0,126,Sports
+C0573,46,Other,14602,Christinaville,2024-12-12,jaimehorton@example.net,558-275-4000,811,4,159,Electronics
+C0574,30,M,36544,Rodriguezshire,2021-03-28,boltonashlee@example.net,+1-684-244-0513x477,1621,2,59,Home
+C0575,29,M,15576,Johnnyton,2022-07-16,kevin85@example.net,(996)580-5864x3247,383,4,58,Fashion
+C0576,48,M,32460,Robertfort,2021-03-18,sherrybean@example.com,999-531-5058x981,335,1,140,Electronics
+C0577,63,F,26131,Stephanieburgh,2020-10-02,andrea74@example.net,572-200-6334x130,256,1,176,Beauty
+C0578,19,F,17009,Lake Johnhaven,2025-06-03,ericksoncatherine@example.net,+1-948-920-3001x71361,83,4,108,Home
+C0579,68,M,44807,West Christopher,2025-08-05,lauren28@example.com,7943944995,425,2,211,Home
+C0580,67,M,13664,North Dennis,2022-08-16,craigdave@example.org,265-227-7861,31146,70,74,Fashion
+C0581,52,F,31813,Port Nancymouth,2021-06-24,gloria86@example.org,+1-961-382-4024,1271,1,167,Fashion
+C0582,40,F,32867,North Larrymouth,2023-08-22,smithlee@example.net,825-596-5350x52826,437,3,357,Home
+C0583,34,M,16844,Paulfurt,2024-09-01,claytoncaroline@example.net,(517)492-5869x994,449,4,304,Fashion
+C0584,43,F,38445,Melissaside,2022-07-04,hmorales@example.org,(934)950-7861x58683,219,2,233,Electronics
+C0585,25,M,19929,Danielview,2022-05-12,donna53@example.net,874.720.6139x212,26,2,327,Sports
+C0586,46,M,24722,East Rachel,2024-12-31,ricetracey@example.com,953.436.8907x5263,16,4,182,Fashion
+C0587,43,F,24443,Suefurt,2021-08-23,laura37@example.net,+1-913-490-5028,275,3,122,Home
+C0588,27,M,20874,South Coryton,2020-10-19,munozann@example.net,(290)419-7555x1966,44,1,334,Fashion
+C0589,43,F,30464,West Jennifer,2025-02-15,ortizmark@example.com,(840)676-9374x381,466,1,203,Fashion
+C0590,51,M,30254,Joshuahaven,2024-07-14,lawrencejames@example.org,943.650.3631x731,1064,3,29,Fashion
+C0591,68,M,10944,West Ronnietown,2025-07-09,aoconnor@example.net,586.301.1511,1072,2,202,Fashion
+C0592,58,Other,37113,East Jasonburgh,2020-12-10,tonya98@example.org,001-364-918-0031x76784,538,3,93,Fashion
+C0593,24,M,11327,South Richard,2025-05-25,briannaherrera@example.org,(424)275-4411x38129,118,2,329,Fashion
+C0594,21,F,33290,Haroldborough,2020-09-22,lindseybruce@example.net,(352)638-0698,993,6,356,Fashion
+C0595,67,M,34567,East Jeffreybury,2023-11-13,allison24@example.com,6096751747,1086,7,176,Electronics
+C0596,62,M,14237,East Jessica,2024-07-23,dennislewis@example.org,(375)911-8436,109,4,330,Fashion
+C0597,28,M,18688,South Robertville,2022-02-01,caitlynlee@example.com,832.771.0143,668,2,211,Electronics
+C0598,46,F,14153,Danielside,2021-07-26,rphillips@example.com,341.589.5394,168,2,184,Electronics
+C0599,53,M,20211,West Edwardshire,2025-08-07,justinmontes@example.org,422.355.9240x051,811,0,95,Sports
+C0600,42,F,19473,North Nicole,2023-11-20,jamesbowers@example.org,684-895-1086x89656,14123,73,273,Home
+C0601,38,M,30087,Carsonbury,2020-10-31,winterstheodore@example.net,001-733-212-3366,15,2,137,Home
+C0602,53,F,37202,Brownstad,2020-12-04,christophersmith@example.net,736.957.8406x41497,1138,4,237,Fashion
+C0603,27,M,38494,East Erica,2025-07-18,perryjennifer@example.org,5088882597,487,4,353,Sports
+C0604,54,F,17590,New Ronald,2023-06-03,davidfreeman@example.net,001-578-710-2928x0002,1813,4,265,Home
+C0605,26,F,20258,Lake Michael,2024-10-30,tjohns@example.org,710.566.1577,312,5,135,Beauty
+C0606,41,F,11233,Samuelland,2024-08-08,ecochran@example.com,628.545.6811,939,3,144,Fashion
+C0607,52,F,15956,Davidchester,2021-08-13,carloscarlson@example.com,(825)921-8450x24192,32,3,19,Sports
+C0608,66,F,32400,New Dylanhaven,2025-02-19,jill43@example.com,514.889.5735x02315,204,5,231,Beauty
+C0609,52,F,42033,Virginiashire,2024-05-07,daniellemartinez@example.com,951-807-1926x56203,34,4,134,Beauty
+C0610,65,M,13443,East Jesusbury,2021-08-13,dkelly@example.com,001-408-439-5028,1851,3,114,Electronics
+C0611,53,M,17378,Evansside,2024-01-31,brandyhawkins@example.com,(226)900-4224x00372,849,4,139,Electronics
+C0612,35,F,21795,North Wandaton,2023-01-02,mschmidt@example.net,+1-692-610-3969,957,3,125,Electronics
+C0613,66,F,24638,Alvaradochester,2025-07-15,michelle80@example.org,7684138289,1390,3,204,Electronics
+C0614,56,F,15933,Lake Dylanport,2024-07-04,elizabethprice@example.org,331-449-0963x714,44,4,61,Beauty
+C0615,49,F,26098,Debbiehaven,2021-12-10,melissa96@example.org,+1-627-744-9682x3580,243,3,250,Electronics
+C0616,41,M,18223,South Andrea,2021-08-16,barneskevin@example.net,+1-663-932-1418,36,1,298,Electronics
+C0617,40,M,21899,Jacksonborough,2021-04-29,sarahcole@example.org,(946)364-4595x49224,118,3,13,Electronics
+C0618,49,F,27405,New Adamport,2021-08-18,hernandezmichael@example.net,001-687-432-1670x6760,130,2,255,Electronics
+C0619,54,M,22083,Cindychester,2023-03-06,kathrynclayton@example.com,001-761-345-6411x738,316,2,85,Electronics
+C0620,29,M,18498,Jonesport,2022-05-28,imorris@example.com,(786)725-4467,156,4,20,Beauty
+C0621,66,F,21081,Michaelchester,2022-03-30,olsonmonica@example.net,315.276.0042x88865,53,4,50,Home
+C0622,30,M,21261,North Tammy,2020-09-15,eric33@example.com,735-285-6316x26908,91,1,164,Electronics
+C0623,40,F,18996,West Robin,2022-11-24,alexandra70@example.net,+1-637-677-7287x44289,79,7,92,Fashion
+C0624,42,M,19860,South Jeffrey,2024-05-14,hwhite@example.net,942-662-4263,1807,3,88,Fashion
+C0625,52,F,41750,Snowmouth,2023-02-21,jdickerson@example.net,798.944.6938x293,712,2,69,Electronics
+C0626,58,M,27566,North Michael,2021-05-07,elizabethlloyd@example.net,+1-217-810-3220x2602,1717,6,37,Home
+C0627,47,M,19571,Williamsland,2022-11-27,kyliehenderson@example.org,(485)641-1680x63048,289,0,253,Home
+C0628,34,M,29108,West Tony,2024-11-14,carrieroberts@example.net,9729025180,163,6,252,Home
+C0629,66,M,19273,Lake Jennifer,2023-10-31,john49@example.com,001-200-825-5190x2760,800,3,140,Home
+C0630,37,M,35215,Scottborough,2021-06-14,williamsjanet@example.com,314-222-4361,197,3,355,Electronics
+C0631,65,M,25536,Aaronburgh,2021-11-08,laurie90@example.com,735.511.1224x65874,177,5,168,Sports
+C0632,42,F,21101,Lewisfort,2022-09-28,nancyorozco@example.com,001-360-812-2140x0230,132,5,54,Beauty
+C0633,39,M,26346,Huntfort,2021-04-18,arianavasquez@example.com,571.925.8621,69,2,178,Sports
+C0634,30,F,11750,Mariahfort,2021-08-01,carol52@example.org,001-230-303-4950x1107,148,4,297,Electronics
+C0635,36,F,14034,Catherineport,2021-01-12,fgomez@example.net,+1-535-614-8098x247,219,3,301,Sports
+C0636,66,F,13662,New Brianna,2022-03-09,amy35@example.net,960-661-3421,560,6,359,Beauty
+C0637,53,M,23322,West Jennaport,2021-10-27,christopher55@example.com,+1-876-660-4247x76561,32,1,106,Beauty
+C0638,29,F,44046,Lake Brian,2024-05-25,james00@example.com,+1-800-227-7839x663,118,3,137,Electronics
+C0639,58,M,53772,South Nicholasfurt,2021-07-13,jeremy59@example.com,797-690-6933,827,5,190,Home
+C0640,36,M,28430,South Gregory,2022-10-29,joanna26@example.org,803-661-7214,79,3,128,Sports
+C0641,29,Other,26912,Shannonview,2020-08-19,jessica62@example.com,646-217-3995,209,2,342,Home
+C0642,26,M,10716,Port Alfred,2025-06-26,michelle84@example.org,234-579-0375,999,0,47,Home
+C0643,24,F,17728,New Sarafort,2021-07-08,melendezamanda@example.com,996.382.4883x0918,84,1,5,Sports
+C0644,45,F,16072,Matthewstad,2020-10-18,gregg83@example.com,001-749-546-8368x70149,43,4,257,Fashion
+C0645,31,F,17182,Port Tina,2025-01-16,brian69@example.net,822-340-6547x46411,331,6,300,Home
+C0646,48,F,20593,Port David,2021-05-27,sbanks@example.com,2822130812,180,2,150,Fashion
+C0647,69,M,18236,Waltonville,2024-05-19,ksmith@example.net,001-569-414-0962x894,414,4,294,Sports
+C0648,36,M,9979,South Michelle,2022-10-20,david60@example.net,+1-983-290-5574,814,1,243,Electronics
+C0649,64,F,29707,South Jessetown,2021-07-02,moorecynthia@example.com,001-319-608-6427x4506,73,1,275,Fashion
+C0650,33,M,14341,Jacksonbury,2021-12-06,thomas82@example.com,001-534-385-1750x478,434,9,208,Home
+C0651,22,M,24238,Dunnshire,2022-09-15,johnbarrett@example.net,599-820-4816,352,2,115,Beauty
+C0652,52,M,50495,Paynechester,2021-10-07,garciasue@example.com,(483)344-7903x71140,77,2,195,Home
+C0653,29,M,15248,West Seanfurt,2021-12-10,eoconnor@example.com,5243160056,489,3,343,Sports
+C0654,42,M,8005,South Johnport,2021-08-27,lroberts@example.org,453-920-1169,159,4,170,Sports
+C0655,69,M,19645,Shawnland,2020-12-25,nicoleriley@example.com,(892)841-1982,334,2,82,Electronics
+C0656,38,F,34213,Kimberlyview,2025-07-10,smithsamuel@example.com,(529)818-7481x001,42,1,154,Fashion
+C0657,53,F,48210,Joshuaport,2022-01-03,tristan36@example.org,(676)481-3287,34331,64,141,Electronics
+C0658,40,F,13469,Gouldfurt,2022-07-14,christinapatterson@example.org,(406)419-3506,182,1,314,Fashion
+C0659,33,M,26867,Davisstad,2022-10-27,williamevans@example.net,+1-212-824-2294,864,0,146,Fashion
+C0660,56,M,18285,Youngchester,2024-12-01,geraldphillips@example.org,+1-824-561-9169x315,29,3,323,Sports
+C0661,62,M,21112,New Joe,2023-08-31,huntmegan@example.com,664.388.7096,271,2,122,Beauty
+C0662,59,F,63432,North Sabrinashire,2024-12-23,jpugh@example.net,+1-597-996-7365x198,306,6,252,Electronics
+C0663,56,F,12074,Lake Jasonberg,2024-09-22,amandamendoza@example.org,827-990-0021x1299,645,2,343,Electronics
+C0664,31,M,24379,New Patricia,2022-01-04,robertmitchell@example.net,776.969.1671x484,426,2,311,Home
+C0665,48,F,26557,South Timothy,2025-06-17,michael14@example.org,5157100859,550,2,89,Fashion
+C0666,22,M,34006,Davisbury,2021-12-04,smithchristopher@example.org,206-293-8645,750,6,58,Electronics
+C0667,52,F,22906,Nancybury,2020-09-13,melanie96@example.net,958-212-1837x7465,990,1,63,Beauty
+C0668,40,F,24914,North Richardport,2025-02-20,ilandry@example.com,(533)806-8186x66050,188,4,347,Sports
+C0669,46,F,18832,Port Donald,2025-07-22,bwright@example.net,537.564.3104x7213,386,4,308,Fashion
+C0670,60,F,24529,Tranbury,2021-11-22,jmckinney@example.net,247.369.4167x46447,916,2,280,Beauty
+C0671,28,F,19201,Sheilahaven,2022-12-11,charlesthompson@example.org,326.398.3351x8844,2275,3,72,Fashion
+C0672,35,M,28243,Carpenterhaven,2022-09-28,garmstrong@example.com,979.804.8424x2788,1101,0,9,Home
+C0673,64,F,18999,Port Melissa,2024-05-29,kayla34@example.com,(408)627-8128,232,3,94,Fashion
+C0674,29,M,25612,Loriville,2022-11-10,christopher64@example.com,773.635.9690x7541,108,4,339,Electronics
+C0675,26,F,21770,Poolehaven,2022-02-20,shannon20@example.net,590.646.3582,336,2,336,Sports
+C0676,27,F,34558,West Williefort,2022-09-04,bensontammy@example.org,8296599197,676,4,152,Fashion
+C0677,61,F,21578,Elliston,2022-07-01,srogers@example.com,2795935372,339,0,356,Home
+C0678,34,M,10837,Cassandraville,2021-08-26,woodspeter@example.org,312-638-1035x2645,330,2,40,Fashion
+C0679,55,F,36489,Paulmouth,2021-11-04,christopher41@example.net,644-713-5620x817,910,4,359,Electronics
+C0680,24,F,15332,Lake Joseph,2025-06-11,sharon46@example.net,956-267-4532,224,4,62,Electronics
+C0681,63,F,16957,Lake Christinachester,2024-03-14,wilsoncurtis@example.com,857.626.0216,982,2,254,Fashion
+C0682,30,M,17356,Rojasport,2021-02-13,brendanliu@example.net,931.432.8969x904,261,3,69,Home
+C0683,57,M,38168,Port Troyburgh,2023-05-27,simpsongloria@example.org,+1-615-276-2806x957,198,4,245,Fashion
+C0684,59,M,9374,Flynnmouth,2021-04-11,ucastillo@example.org,875-391-5096x260,302,4,170,Home
+C0685,26,M,77272,Earlfort,2023-05-06,jamesthomas@example.com,448.698.8922,718,3,178,Home
+C0686,67,F,33604,Danielfort,2021-07-07,brownwanda@example.org,244-242-9593x55465,67,3,189,Home
+C0687,44,M,24083,Dyerberg,2020-10-13,melindahutchinson@example.net,243.686.6655,109,3,260,Fashion
+C0688,19,F,21548,Port Brian,2020-12-09,dunnsusan@example.org,(226)829-8427x63610,1512,2,72,Sports
+C0689,22,M,24691,Alexandermouth,2025-07-09,tracy91@example.net,(989)550-2325,96,3,17,Fashion
+C0690,46,M,27131,Lake Brian,2021-07-18,jeffrey82@example.org,(607)922-0176,419,4,341,Fashion
+C0691,54,F,28512,Garrettbury,2021-03-20,daniellejones@example.org,(704)937-8130x97639,432,5,57,Electronics
+C0692,55,F,27508,Port Amanda,2021-04-18,ugilbert@example.org,001-983-703-4576x64182,336,5,218,Fashion
+C0693,36,F,22830,Lake Tyrone,2023-08-11,sullivanmonica@example.com,399-919-9615x806,517,1,107,Electronics
+C0694,25,F,20354,Lake James,2025-06-30,alexiswatson@example.com,(690)976-7510x86147,130,5,304,Home
+C0695,65,F,20733,Coreyport,2022-04-26,kdelgado@example.com,(735)813-3266x462,402,4,173,Electronics
+C0696,62,M,20374,Arnoldfurt,2020-09-15,petersonthomas@example.com,417.747.7010x069,232,2,219,Fashion
+C0697,18,Other,34665,New Davidhaven,2021-06-10,qknight@example.org,846-577-3605x204,541,2,247,Beauty
+C0698,39,F,27929,North Katiechester,2023-07-14,msmith@example.com,845.624.7740,76,1,218,Fashion
+C0699,69,F,6794,Jonesberg,2023-08-13,tracy51@example.com,(646)278-1362,423,3,31,Electronics
+C0700,34,M,28634,Stevenland,2020-08-24,brayernest@example.org,582.397.3943,102,5,47,Electronics
+C0701,24,F,23810,West Timothy,2022-05-03,christopher34@example.net,842.607.2214,163,1,134,Beauty
+C0702,42,M,21862,North Donnamouth,2022-06-11,haneyjennifer@example.com,597.382.7390x9284,123,2,108,Electronics
+C0703,62,M,18856,New Jaredmouth,2022-04-13,hubbardgregory@example.net,(611)912-5028x420,100,3,72,Fashion
+C0704,21,M,34532,North Paula,2023-12-19,johnandrews@example.net,2604982742,49386,98,327,Fashion
+C0705,53,M,32177,Kimshire,2023-08-19,gallowayadam@example.com,923-233-1867x7806,168,3,108,Home
+C0706,23,F,16168,Lake Deanna,2024-01-19,teresa36@example.net,(316)916-1248x88641,1309,3,309,Home
+C0707,48,F,25921,South Sarah,2024-11-11,travislane@example.org,001-227-873-7368x2430,1752,5,272,Beauty
+C0708,36,F,14933,New Kathryn,2020-10-17,stephanie58@example.com,424-524-2348x72751,423,4,171,Electronics
+C0709,61,M,12684,Matthewport,2024-04-10,lwatson@example.com,001-933-878-1893x118,77,3,116,Electronics
+C0710,56,M,17142,South Williammouth,2024-07-19,stonecourtney@example.com,001-779-590-9591x837,234,5,329,Electronics
+C0711,44,M,31099,West Nathanielhaven,2020-10-18,fcarter@example.org,303-302-4763x330,799,4,74,Electronics
+C0712,27,Other,32249,Sandraside,2021-06-14,johnibarra@example.net,+1-702-746-5088,228,1,256,Electronics
+C0713,43,M,27044,Seanbury,2024-09-15,milesgregory@example.net,(684)579-7967,45,3,81,Fashion
+C0714,36,F,29437,Lake Sarahburgh,2021-04-16,juarezjessica@example.org,202-685-7118x0482,406,3,268,Fashion
+C0715,56,F,27077,Hillberg,2024-07-10,martinezalicia@example.org,333-891-2216,932,1,128,Home
+C0716,20,M,17041,West Kimberlyland,2024-07-20,joshuabentley@example.org,001-885-851-6183x887,794,5,326,Fashion
+C0717,62,F,26180,Port Christopher,2022-07-14,ipetty@example.com,(747)806-1696,96,3,235,Home
+C0718,30,F,30338,East Ianbury,2023-09-15,vargaswilliam@example.com,+1-518-599-8253x2159,558,2,41,Fashion
+C0719,67,F,29783,Lynnborough,2022-07-19,charles65@example.com,(502)929-4035,124,3,181,Electronics
+C0720,45,F,35438,Carolineshire,2025-01-03,wendy20@example.net,(922)367-8286,123,3,157,Fashion
+C0721,37,M,29240,Arielchester,2022-11-08,jessica01@example.org,6635692800,1036,3,59,Electronics
+C0722,45,M,25351,Beckborough,2022-01-11,djohnson@example.org,349-505-9197x32051,143,1,345,Electronics
+C0723,25,F,33794,South Christopherburgh,2021-12-22,christopher14@example.com,304.548.9659x97885,152,5,249,Fashion
+C0724,58,F,21794,New Ryan,2023-02-20,david48@example.net,001-283-943-4163x92191,0,1,192,Sports
+C0725,56,M,15479,West Brandonchester,2021-03-31,michellecampbell@example.net,(844)988-4503,1022,4,24,Home
+C0726,18,F,20635,Griffinhaven,2021-06-04,hbrown@example.com,(630)902-0434,786,2,80,Electronics
+C0727,20,F,16350,Pierceshire,2023-12-29,emilymiller@example.com,(626)489-5590,493,3,134,Beauty
+C0728,30,F,16813,Morrisonville,2024-05-09,gregory85@example.net,001-658-200-6014,693,4,213,Home
+C0729,45,M,20789,Port Ronaldburgh,2024-01-24,urodriguez@example.net,001-927-702-8726x14167,82,3,348,Home
+C0730,66,F,16043,Margaretside,2021-11-24,johnrojas@example.org,4865297132,306,8,166,Beauty
+C0731,42,F,19473,South Cristinaborough,2023-04-02,ghughes@example.net,+1-625-738-7232x56427,216,2,348,Fashion
+C0732,50,M,10327,New Amberbury,2024-07-18,whiteheadsierra@example.org,990-325-3136,49,2,337,Electronics
+C0733,55,M,23988,New Thomas,2023-02-13,andrewhughes@example.com,7507986430,332,1,71,Fashion
+C0734,23,F,22037,South Jennifer,2022-05-10,paige47@example.net,+1-650-737-0849x05465,1267,1,214,Fashion
+C0735,61,M,15885,North Andrewmouth,2023-03-25,danielkeller@example.com,874-825-7957x30284,20,5,65,Fashion
+C0736,62,F,28672,New James,2022-11-14,kristaperkins@example.com,(632)537-7895x356,172,2,221,Home
+C0737,49,F,32049,Kennethland,2025-07-09,elizabeth36@example.com,(393)529-7282,116,0,308,Sports
+C0738,62,M,11579,East Diamondport,2023-06-08,andrew20@example.org,596.885.5453x4754,136,2,286,Sports
+C0739,64,F,16234,Rubenside,2025-04-23,alvinhicks@example.org,(481)577-5674,1195,5,185,Beauty
+C0740,38,M,16193,East Christie,2024-11-08,kenneth65@example.net,+1-843-994-8628,315,4,207,Beauty
+C0741,33,F,15124,West Sandra,2022-05-18,melissacarter@example.net,+1-335-722-0608x8115,313,4,99,Sports
+C0742,38,M,30693,Wufort,2024-02-18,tracy17@example.com,(680)797-5217,714,4,242,Electronics
+C0743,28,F,20383,Hillport,2025-04-11,jamesmorales@example.com,001-802-493-9610,83,4,158,Electronics
+C0744,54,M,19814,Stephenborough,2023-11-08,kimberlycannon@example.org,001-822-582-8501x31741,333,1,98,Fashion
+C0745,53,M,9881,Traceystad,2025-06-20,lallison@example.org,489-943-6859,281,3,42,Beauty
+C0746,52,F,28400,Wanghaven,2024-07-24,jmcmahon@example.net,315.630.0447x4667,454,1,139,Fashion
+C0747,36,M,13417,Hillmouth,2025-01-10,amanda27@example.com,001-291-400-5634x917,3861,4,283,Home
+C0748,37,F,22560,West Jenniferhaven,2021-07-22,nhill@example.net,+1-767-442-5261,49958,65,227,Electronics
+C0749,35,M,24611,East Walterberg,2024-03-05,michellecastro@example.net,(968)846-3666,253,3,72,Electronics
+C0750,64,F,37959,Lawsonton,2023-02-09,elizabeth84@example.com,(642)353-6088,878,3,243,Home
+C0751,58,M,13049,Johnnyhaven,2024-07-10,joshuabaker@example.net,+1-606-258-6229,93,3,18,Electronics
+C0752,66,F,6582,Jasonmouth,2023-03-31,gford@example.org,967.893.7527x219,15,4,77,Fashion
+C0753,31,M,23707,Jameshaven,2024-08-23,amy35@example.org,+1-902-289-7208x96918,114,2,45,Electronics
+C0754,32,M,45261,Melissafurt,2022-05-15,tinastein@example.org,(248)219-1677,208,3,343,Fashion
+C0755,48,M,36155,North Patricia,2023-11-24,howellkristy@example.org,(407)733-6583,357,4,140,Home
+C0756,18,M,23953,Reginaside,2025-07-21,markstafford@example.com,(907)225-2909x771,477,5,177,Fashion
+C0757,20,F,18094,Lake Alexandra,2021-01-07,hburke@example.net,897.283.9690,1207,2,222,Home
+C0758,33,M,30419,Robertsonborough,2022-10-23,jennifer90@example.com,(313)733-7459,356,2,92,Electronics
+C0759,40,F,14921,Garciafort,2022-12-17,mcannon@example.com,3029179946,26650,87,22,Beauty
+C0760,28,M,26649,New Jessica,2023-10-21,markkemp@example.org,(836)879-1531x2257,25,2,172,Fashion
+C0761,29,M,26962,Greenfort,2022-12-24,tamarakennedy@example.com,+1-835-745-5700,17,4,92,Home
+C0762,27,F,33660,Shannonborough,2022-05-02,jhayden@example.com,+1-354-429-1564x053,400,2,192,Home
+C0763,49,F,66427,Gamblehaven,2022-07-18,jacksonrichard@example.net,(719)651-0802,288,2,77,Electronics
+C0764,33,M,25770,South Marcusside,2024-01-12,itucker@example.net,487.806.4469x065,10405,51,281,Beauty
+C0765,25,M,17969,Tanyabury,2021-12-31,myerspatricia@example.com,806.462.1199,87,3,364,Home
+C0766,55,M,21802,South Luischester,2022-01-20,jasonsingh@example.org,791-341-2599,12,4,179,Fashion
+C0767,29,F,10854,North Michaelstad,2024-10-28,davisbrian@example.org,729-806-3941x763,298,1,238,Electronics
+C0768,41,F,16682,East Amychester,2024-02-23,williamsdavid@example.com,755.821.3518x277,135,3,135,Sports
+C0769,45,M,18700,North Garyland,2024-06-07,jacquelinehess@example.com,512-549-2386,25,6,280,Beauty
+C0770,25,F,17860,Nelsonstad,2024-09-22,andreakhan@example.net,527.954.6239,644,3,19,Electronics
+C0771,45,F,23410,Kendrastad,2024-10-09,larsonkelly@example.net,(519)513-8418x507,59,1,83,Fashion
+C0772,53,F,15851,Port Jamesland,2024-02-02,monicastone@example.org,(726)982-3450,468,3,228,Beauty
+C0773,43,F,34489,Brittanyton,2020-09-30,walkerdana@example.com,+1-944-333-6508x082,164,6,265,Home
+C0774,25,M,22028,Fieldsstad,2021-09-26,escobarsteven@example.com,519-343-0289x9910,95,4,112,Beauty
+C0775,67,M,21944,Lake Jennychester,2022-05-02,christopher79@example.net,(506)593-0065,238,4,251,Fashion
+C0776,45,M,19318,Christopherland,2024-11-26,lpowell@example.org,268-357-6142,20845,75,164,Home
+C0777,45,M,23437,Lake Antonioview,2021-12-05,emann@example.com,(769)229-5177,248,5,358,Fashion
+C0778,54,F,30639,Yvonneborough,2022-07-13,cummingsstacey@example.net,001-878-772-5675x9490,694,0,168,Electronics
+C0779,58,F,15570,West Gary,2020-10-30,jillian39@example.net,(407)374-5681x206,67,5,221,Home
+C0780,53,M,16928,Bryanmouth,2021-07-18,hannahpeck@example.org,001-544-570-0947x350,740,2,304,Sports
+C0781,44,M,19506,Port Robert,2021-10-02,kimberly88@example.org,755-584-2961,135,0,191,Fashion
+C0782,34,M,12857,Guerratown,2024-07-20,hardinwilliam@example.net,211-841-7075,565,3,325,Fashion
+C0783,26,F,15871,Toddfort,2023-04-05,vernon35@example.org,001-914-496-6561x95974,417,6,170,Home
+C0784,50,M,18206,Port Anthony,2024-07-12,cynthia90@example.com,558.688.8691,1323,3,45,Fashion
+C0785,37,F,31249,New Rebecca,2023-12-08,silvajoan@example.com,516-670-3359,244,2,14,Beauty
+C0786,30,M,24465,East Alexis,2024-08-17,tara49@example.org,001-801-609-3708x42670,34,2,231,Beauty
+C0787,45,M,23799,Larsontown,2024-07-11,whitetara@example.com,775-654-0172,9,2,157,Electronics
+C0788,65,Other,30957,Andrewsburgh,2024-09-29,michael58@example.com,(662)909-0712,876,3,134,Sports
+C0789,46,F,20848,New Gary,2021-05-21,mathislance@example.com,+1-603-774-0808x1337,371,7,37,Beauty
+C0790,30,M,25749,Chapmanchester,2023-01-19,riceriley@example.org,575.474.3983x69234,746,0,53,Beauty
+C0791,63,F,21135,North Kathyshire,2024-09-28,jenniferdavenport@example.com,372.481.9740x28219,133,3,18,Home
+C0792,52,F,24493,Lake Davidfort,2024-06-22,sandra20@example.net,641-218-4211,211,3,38,Beauty
+C0793,23,F,17446,Kathleenland,2022-08-05,ebrandt@example.org,362.313.3312,15,4,187,Electronics
+C0794,35,M,8303,Keithmouth,2022-07-13,marysantiago@example.com,+1-748-827-7363x08355,1628,3,196,Fashion
+C0795,68,F,20874,Garciabury,2023-06-08,michaeledwards@example.net,4899695458,551,3,243,Beauty
+C0796,22,F,38913,New Patricia,2022-11-23,ronaldschmidt@example.org,+1-931-691-9133x7215,1353,3,300,Electronics
+C0797,64,F,31903,Anthonyport,2021-08-27,sarahwebb@example.net,732.225.2964,154,3,303,Electronics
+C0798,42,M,32407,East Jeanne,2024-03-05,owilkerson@example.net,498-870-1158x2073,472,7,35,Beauty
+C0799,19,M,36114,Danielfort,2025-07-13,ashleysmith@example.com,(770)771-9605,567,2,215,Beauty
+C0800,27,M,22821,Welchshire,2024-04-02,terrikidd@example.org,+1-399-518-1497,191,2,219,Electronics
+C0801,47,F,23835,Padillaburgh,2020-10-01,epark@example.com,379.837.1162,942,3,316,Beauty
+C0802,67,M,17204,Lake Melissa,2022-06-04,qkelly@example.org,+1-611-249-5093x641,1470,3,90,Home
+C0803,62,F,19410,Garybury,2023-11-12,adamskevin@example.com,(508)510-2058x23282,1080,4,308,Fashion
+C0804,22,F,28178,New Samuelberg,2022-02-04,mercadoalexander@example.com,476-809-7207x6043,671,2,252,Beauty
+C0805,50,M,35651,East Jeremy,2020-12-07,kaustin@example.net,001-623-921-9325x35837,162,3,8,Fashion
+C0806,18,F,20831,Matthewberg,2023-02-15,adamsconnor@example.org,7768876911,165,3,256,Electronics
+C0807,35,M,18396,Fitzgeraldshire,2020-12-10,combscourtney@example.com,435-796-4312x0317,1653,3,363,Electronics
+C0808,49,F,22031,Lake Allisonside,2022-10-28,michelle85@example.com,+1-983-753-0690x8217,5,2,208,Fashion
+C0809,64,M,28014,Lopezfort,2024-01-29,ctaylor@example.org,+1-974-978-0875x65189,40028,50,131,Fashion
+C0810,66,F,12362,Riveraside,2023-06-17,kelly61@example.net,406-790-1958,612,1,224,Beauty
+C0811,28,F,8791,East Matthewside,2022-03-01,wellsallen@example.com,(752)467-8125,487,5,197,Beauty
+C0812,38,F,17672,South Charleschester,2022-01-31,herreradavid@example.net,+1-572-620-2496,2308,4,142,Home
+C0813,43,F,13517,Mendozaview,2024-09-17,wsmith@example.net,001-258-466-2843x6258,186,3,252,Beauty
+C0814,42,F,17975,Port Jacquelinechester,2022-11-12,hallbrendan@example.org,8372802619,207,4,96,Electronics
+C0815,39,F,20762,Nancymouth,2022-03-23,jennifer68@example.net,+1-771-737-8104x87540,41,3,26,Electronics
+C0816,44,F,18374,Jeffreybury,2022-12-19,timothy30@example.com,+1-767-428-0563x52742,292,3,111,Beauty
+C0817,66,F,39378,New Robertchester,2023-05-25,matthew27@example.org,(333)342-7578x46684,151,4,123,Electronics
+C0818,30,M,25101,New Joseph,2022-03-27,justin54@example.org,881-971-6886,210,3,186,Electronics
+C0819,50,F,24839,Payneview,2020-08-30,craig20@example.org,(630)609-6214,899,4,168,Home
+C0820,51,F,28250,New Veronicaberg,2021-02-25,rebeccalopez@example.org,323-577-8875x853,1370,2,51,Fashion
+C0821,58,F,13967,Cynthiaville,2024-08-11,amybarr@example.net,993-762-7921,102,5,5,Beauty
+C0822,52,M,33377,East Destinymouth,2022-08-14,linda74@example.org,572-882-4135x03040,233,4,77,Electronics
+C0823,18,F,21368,Schmidtfurt,2023-07-11,nicolegarcia@example.org,204-391-2680x750,1319,2,160,Electronics
+C0824,38,M,28801,West Jeremybury,2025-03-15,frich@example.net,(893)987-6052x5056,31,3,208,Fashion
+C0825,65,F,14346,Port Pamela,2021-07-27,ballardapril@example.org,(887)338-9284x7248,48,4,257,Home
+C0826,23,M,11831,West Michaelport,2023-07-19,sandra25@example.net,(577)797-1711x1344,88,4,205,Fashion
+C0827,45,F,30551,New Steventon,2022-11-30,karen61@example.com,(743)580-7606x3832,452,4,255,Fashion
+C0828,34,Other,25605,Port Edwinside,2022-09-10,richardmartin@example.net,360.298.0715x7880,81,5,11,Beauty
+C0829,22,M,15354,Deniseside,2021-10-24,vgonzalez@example.net,2803513262,1722,2,8,Sports
+C0830,48,F,15554,West Rachel,2021-10-19,ymcgrath@example.org,610.992.8751,295,3,32,Electronics
+C0831,22,M,34550,West Cindy,2023-10-22,allenmacias@example.com,001-758-624-9975x416,348,3,28,Fashion
+C0832,55,F,13687,Lake Aarontown,2021-08-11,zhogan@example.com,969.779.8595,141,3,206,Fashion
+C0833,20,F,42491,Maryport,2024-08-09,katelynaustin@example.com,+1-245-220-4848x35190,318,2,228,Sports
+C0834,40,F,15363,Lake Amanda,2022-05-08,dylan22@example.net,663.783.1461,542,3,128,Sports
+C0835,54,F,28434,West Donnaport,2025-02-16,james28@example.net,001-329-724-9562x9259,695,2,255,Electronics
+C0836,54,F,19313,Denisestad,2023-10-03,christine69@example.net,001-783-596-5914x73771,700,6,212,Home
+C0837,27,M,28036,Lynchview,2025-05-22,timothyking@example.net,(646)792-8483x357,431,4,239,Fashion
+C0838,27,M,17718,Hernandezmouth,2022-10-29,davisjasmine@example.org,253.941.4590x498,27443,79,207,Electronics
+C0839,36,F,20637,East Lisa,2022-04-08,chelseyallen@example.net,001-884-515-7399x772,850,1,318,Electronics
+C0840,34,F,22389,Ryanville,2024-05-16,davidwashington@example.org,+1-573-343-0169,707,4,283,Fashion
+C0841,38,F,14751,New Noahfurt,2020-08-23,ywagner@example.org,796.745.4383,28,4,245,Fashion
+C0842,31,F,29623,Lake Jamestown,2024-05-21,rachel43@example.org,(707)571-3198x7467,3,2,45,Electronics
+C0843,26,M,17938,New Brandon,2020-10-09,todd73@example.org,+1-592-916-2295x2760,119,6,105,Home
+C0844,63,F,20101,Richardfort,2020-09-10,michelle72@example.com,(319)837-5075x84968,544,3,348,Electronics
+C0845,18,M,14798,East Adrianhaven,2021-08-22,dunnallison@example.com,945-330-9959x6034,264,0,281,Home
+C0846,68,F,7903,Jenniferbury,2020-12-10,spearsmegan@example.net,501.553.5415x7095,257,3,234,Fashion
+C0847,62,M,20406,Palmerhaven,2023-10-09,tiffany42@example.com,(942)463-1084,1079,1,189,Electronics
+C0848,30,M,57817,Millerchester,2023-08-11,michaelwilson@example.com,895-253-6421x1059,1129,2,44,Fashion
+C0849,21,M,30147,New Carl,2024-10-13,ybrown@example.net,955.379.6693,1199,3,225,Electronics
+C0850,18,M,21857,East Amanda,2023-04-09,cynthiarodriguez@example.com,(753)404-3636x282,188,2,142,Fashion
+C0851,66,F,19827,Lake Nicole,2024-09-29,wgutierrez@example.net,8475859590,587,3,136,Electronics
+C0852,57,M,22225,South Bryanfurt,2024-02-27,crystal27@example.org,(753)241-5786,158,3,176,Fashion
+C0853,49,M,27415,West Bethstad,2024-01-31,jasonfernandez@example.com,+1-533-406-0855x176,105,2,142,Electronics
+C0854,51,M,13734,South Jessebury,2021-09-23,amiller@example.net,001-845-269-2764,102,5,80,Home
+C0855,45,M,34397,New Katherine,2022-03-03,spowers@example.org,+1-816-612-5620x11704,44119,63,82,Beauty
+C0856,48,M,29323,East Tyrone,2022-04-09,ybrooks@example.net,710.300.3993x311,281,3,135,Electronics
+C0857,25,M,29356,Peterside,2025-06-26,barnesscott@example.net,217.854.6507,888,3,207,Fashion
+C0858,56,F,26249,Howellborough,2023-11-12,danny08@example.com,2577810872,63,3,344,Electronics
+C0859,43,F,22199,Danieltown,2024-09-28,bneal@example.org,+1-506-272-2525,663,4,177,Home
+C0860,51,F,28829,East Kimberlychester,2023-09-13,brettmiller@example.org,(880)595-7738,379,4,243,Electronics
+C0861,20,M,27909,Guzmanville,2023-10-10,seth00@example.net,242.232.4630,169,1,55,Fashion
+C0862,67,M,19117,Valerieborough,2021-09-07,klynch@example.org,+1-829-795-6150x3978,339,4,141,Fashion
+C0863,29,F,17510,Schmidtland,2023-06-18,jerry96@example.com,(606)746-6257,178,2,56,Sports
+C0864,18,F,22942,New Kayla,2024-10-18,ltaylor@example.net,829-200-6259x4646,453,1,15,Fashion
+C0865,61,M,40929,South Christina,2023-05-06,barrrobert@example.net,619-558-8963x7259,284,3,185,Home
+C0866,22,M,13418,Lake Molly,2024-06-21,koneill@example.org,9414074909,89,4,314,Fashion
+C0867,47,M,12246,Lake Davidland,2022-05-23,shoffman@example.net,+1-825-537-8721,61,0,88,Sports
+C0868,47,M,23527,Lake David,2022-09-17,jennifer51@example.net,341.201.6878x801,395,4,97,Beauty
+C0869,34,M,22479,Dylanmouth,2025-07-16,mbowers@example.net,292.516.8640,1163,3,144,Electronics
+C0870,65,F,23607,Dixonbury,2020-11-11,tbennett@example.net,001-298-202-1749x83235,210,4,8,Beauty
+C0871,64,F,24284,North Brandon,2024-03-26,jamesmartin@example.org,795-798-1660x04112,660,0,215,Fashion
+C0872,40,F,20145,Amybury,2024-08-07,herringmitchell@example.org,001-783-503-8860,537,2,173,Beauty
+C0873,32,F,39972,East Charlesland,2023-04-25,garyjones@example.com,343.762.4304,1340,6,223,Beauty
+C0874,54,F,11610,West Abigail,2025-02-26,stefanie35@example.com,001-800-498-1353,860,4,40,Electronics
+C0875,38,F,15813,Lake Brittany,2023-05-15,kelsey82@example.net,(983)824-3901x704,418,4,182,Home
+C0876,31,F,21135,North Rodneyton,2022-04-16,millerbryan@example.net,4378222684,535,2,270,Electronics
+C0877,19,M,11415,South Tracy,2021-01-26,kimberly94@example.net,678-684-8041x71619,1143,1,187,Electronics
+C0878,28,M,20530,Port Christine,2023-09-12,sanchezdouglas@example.org,001-372-785-2431x4038,255,2,245,Electronics
+C0879,68,M,42812,West Josephville,2023-02-03,krodriguez@example.net,+1-633-396-2736x3391,197,3,309,Home
+C0880,56,F,22211,Reyeston,2023-10-06,loricox@example.net,(917)226-7463,42152,62,231,Electronics
+C0881,55,F,24155,Stouthaven,2024-01-21,gary05@example.com,(219)635-7154,875,4,155,Electronics
+C0882,51,M,13305,Chanborough,2023-01-02,hannahconley@example.net,001-596-732-8821x3186,807,3,175,Home
+C0883,55,F,17213,North Peter,2021-04-14,jessedavis@example.net,446.458.8108x2986,27693,96,336,Electronics
+C0884,67,M,18956,South Frank,2022-05-30,nelsonfrank@example.org,(361)323-4379,430,1,115,Electronics
+C0885,51,F,19397,Adamtown,2024-02-29,matthewskevin@example.org,846.512.1094x5150,311,3,311,Electronics
+C0886,35,M,36778,Lake Brandon,2021-09-10,nmurphy@example.net,669.316.7884x4100,63,4,300,Fashion
+C0887,47,M,27531,Davidside,2025-03-22,nbrooks@example.com,001-608-654-7098,1970,3,18,Fashion
+C0888,32,F,14120,Joshuaville,2022-10-11,brianbruce@example.org,(422)603-7496x45963,120,2,272,Electronics
+C0889,44,M,24308,Pearsonfort,2024-11-12,mccarthytyler@example.com,695.382.0100,34,2,12,Sports
+C0890,68,M,26884,North Corey,2022-12-12,cherrysue@example.net,+1-660-310-4150x6256,451,4,301,Home
+C0891,51,M,34754,Lake Christinaland,2025-07-25,kathrynmorales@example.net,917-804-7109x97108,671,1,192,Fashion
+C0892,69,F,41448,Wilsonbury,2025-01-16,samanthajohnson@example.com,(231)948-6618x015,16,4,232,Fashion
+C0893,55,F,14675,Georgemouth,2024-10-08,evaughn@example.org,276-489-5074x4652,537,1,93,Fashion
+C0894,50,M,15925,New Barry,2022-11-27,amiller@example.com,686.501.3189x158,379,2,218,Home
+C0895,41,F,13319,Jimenezstad,2022-05-31,jbradley@example.com,(293)717-3117,54,1,278,Electronics
+C0896,32,F,20058,Port Jamie,2022-09-05,juansmith@example.net,330-513-8023x1211,94,1,353,Electronics
+C0897,47,M,26543,East James,2024-12-23,hramirez@example.com,+1-291-261-4609x1937,419,2,303,Beauty
+C0898,59,M,32693,Lake Jessica,2025-02-03,michellegomez@example.org,492.388.6461x0985,175,4,29,Electronics
+C0899,68,M,21367,Rebeccashire,2022-09-15,anitastephens@example.org,001-353-552-7950x90526,1392,3,301,Fashion
+C0900,34,M,19381,Lake Robert,2021-10-21,derek55@example.org,+1-643-905-7361x7102,853,4,77,Beauty
+C0901,22,F,23404,Lake Cynthiaview,2023-10-07,rrobinson@example.net,(351)317-3114x40826,2054,2,9,Home
+C0902,46,M,15771,Port Brookeland,2023-09-22,kathryngarza@example.org,+1-699-283-8461x7461,150,3,24,Fashion
+C0903,21,F,50808,West Jamesfort,2024-08-02,gmacias@example.net,(541)851-0145,1748,5,15,Home
+C0904,27,F,11578,Jaredchester,2021-04-18,jennifer86@example.org,776.849.2513,282,5,164,Electronics
+C0905,34,M,23715,Emilyfort,2022-04-14,raymond67@example.net,(242)452-9504,213,3,13,Home
+C0906,27,F,49485,South Brandonfort,2023-05-25,heatherthomas@example.net,276.747.1721x2265,25,4,347,Fashion
+C0907,34,M,22086,Washingtonside,2024-09-15,sherri86@example.com,001-946-957-1368,27,4,172,Beauty
+C0908,37,F,20414,South Williamfort,2022-03-02,harrisandrew@example.com,742-641-4519x80915,588,3,357,Sports
+C0909,41,F,19091,South Elizabeth,2020-12-02,cameron91@example.org,504-611-2812x359,306,2,327,Sports
+C0910,22,F,20493,Lake Davidbury,2022-08-16,scottluna@example.com,(215)687-2339x88452,128,3,200,Sports
+C0911,51,F,38144,East John,2024-06-08,nmoore@example.com,267.832.9507,475,3,76,Fashion
+C0912,23,M,9092,East Malikchester,2022-11-23,aweber@example.net,833-398-4301x88529,145,5,164,Fashion
+C0913,19,F,40675,Lake Bobby,2020-08-31,carrbradley@example.com,2894504837,430,3,61,Fashion
+C0914,30,F,12461,Herreraville,2023-07-22,bradshawmelissa@example.org,+1-217-507-6365x481,222,2,245,Home
+C0915,60,F,19798,Amandaland,2021-11-28,crystalward@example.org,980.333.0427,867,4,155,Beauty
+C0916,60,F,18551,East Michelle,2022-03-15,michellehernandez@example.net,837-313-9179,859,4,257,Electronics
+C0917,65,F,27873,Michelleton,2021-01-14,gonzalezlarry@example.org,001-961-352-4971x821,324,1,244,Sports
+C0918,28,M,11623,South Joshuaberg,2021-06-05,corteztyler@example.net,(842)217-9823x760,216,5,162,Beauty
+C0919,68,M,26499,East Jenniferside,2023-01-04,csandoval@example.net,(371)397-4102x187,225,2,68,Sports
+C0920,64,F,49499,South Ronald,2022-11-25,lawrence41@example.com,(431)923-9964x7816,819,1,344,Beauty
+C0921,40,M,12768,North William,2024-09-30,rbryant@example.net,+1-962-596-4618x761,198,2,277,Electronics
+C0922,33,F,23762,North Adam,2024-05-22,handerson@example.net,2388231850,117,5,161,Electronics
+C0923,48,F,16902,Port Samantha,2023-10-03,xpowell@example.com,251-599-9876,44,4,259,Electronics
+C0924,28,M,26117,West Allison,2023-11-22,pgarner@example.com,(708)420-4417x20583,314,5,307,Electronics
+C0925,33,M,22195,South Nicholehaven,2025-06-12,brentrowe@example.com,8832809900,329,4,335,Home
+C0926,25,F,17041,Blakemouth,2021-09-14,royhall@example.org,533-990-6123x03706,919,1,95,Beauty
+C0927,21,M,26772,West Tiffanyland,2021-06-05,barbara08@example.org,001-649-899-0258x410,26488,80,246,Beauty
+C0928,57,F,45330,Vincentshire,2025-05-06,justin67@example.org,8768520894,239,1,221,Home
+C0929,21,M,20407,Sarahaven,2021-01-19,angelaanthony@example.net,(842)335-9909x3669,826,4,123,Electronics
+C0930,42,F,29375,Debrafort,2023-06-10,jasonramirez@example.com,876.805.4122,867,2,187,Electronics
+C0931,20,M,13130,New Aprilside,2021-07-30,sharrison@example.org,001-319-723-7111x65515,242,2,262,Electronics
+C0932,49,F,15024,West Debraview,2024-07-01,robinsonlinda@example.org,7157521564,307,3,273,Fashion
+C0933,20,M,26607,Westfurt,2022-04-17,andrew52@example.net,941.726.6432x922,180,4,60,Fashion
+C0934,44,F,39880,Jeffreymouth,2022-10-21,philipfranklin@example.net,(304)977-8817x025,1348,2,125,Electronics
+C0935,46,M,25393,Lake Jacquelinechester,2022-05-31,ashleyfloyd@example.net,+1-388-731-1978,63,3,337,Fashion
+C0936,49,F,19433,South Kimberly,2021-10-07,jeffrey17@example.org,+1-960-741-6879x898,1357,4,341,Electronics
+C0937,67,F,22020,Barbarastad,2024-07-18,mitchelljames@example.net,(497)716-3582,575,2,51,Home
+C0938,68,M,13357,Lopezton,2023-11-20,david76@example.net,+1-930-655-9339x8828,379,3,178,Fashion
+C0939,36,M,28051,Rosstown,2025-06-05,steven73@example.org,9603339738,16,2,139,Fashion
+C0940,38,M,31348,Sweeneyberg,2024-06-04,sherriconner@example.com,+1-514-706-1524x780,322,5,327,Fashion
+C0941,22,F,18382,Lawsonchester,2022-11-28,marylopez@example.com,(329)561-9245x91231,261,7,170,Sports
+C0942,35,F,18251,Josephfurt,2024-07-31,marc59@example.org,628-624-0038x733,87,4,39,Electronics
+C0943,45,F,24498,New Christineland,2022-12-26,sara82@example.net,+1-896-872-3735,534,2,69,Fashion
+C0944,59,M,18496,North Paulbury,2022-10-20,qmartin@example.org,(296)924-3477x1786,1772,0,236,Home
+C0945,39,M,21451,Lake Kenneth,2020-08-25,denniscruz@example.com,577-689-7562,412,3,48,Home
+C0946,38,F,51015,Daviston,2020-08-17,vangronald@example.org,458-448-4937x067,627,3,57,Sports
+C0947,23,F,19954,Daisyburgh,2021-02-27,qroberts@example.org,+1-666-284-9524x0693,35,2,277,Fashion
+C0948,18,Other,19085,Lake Sarah,2022-05-01,laura27@example.org,001-503-890-9839x169,270,1,338,Fashion
+C0949,22,M,17000,North Michael,2024-09-19,wlee@example.org,516-386-1873x1427,61,7,99,Electronics
+C0950,58,F,29663,Nolanhaven,2021-10-14,melanie34@example.com,(692)463-3806x79393,474,4,15,Home
+C0951,29,M,20486,Hannahburgh,2025-05-07,andrea99@example.net,001-629-712-6755x170,1394,7,325,Electronics
+C0952,43,M,16987,Johnstad,2023-01-14,ortizpatricia@example.com,001-604-492-2810x023,542,4,179,Electronics
+C0953,63,F,37366,Thompsonbury,2023-07-07,david71@example.org,+1-212-352-5628x26183,39,2,332,Fashion
+C0954,51,F,38864,North Heidiburgh,2022-06-17,pgriffin@example.org,532-236-3388x35128,218,2,62,Fashion
+C0955,66,Other,17323,South Joe,2024-03-29,parksbrittany@example.com,(229)782-6798x3380,399,4,119,Electronics
+C0956,31,M,10439,New Alexandraland,2024-04-13,sheri66@example.net,348.383.9467x256,258,2,37,Home
+C0957,43,M,32958,Thompsonshire,2022-07-06,pbenson@example.com,+1-868-482-1245,896,5,134,Home
+C0958,62,F,16749,Kyleburgh,2022-06-24,tommyhawkins@example.com,5362865659,842,4,26,Electronics
+C0959,44,F,30219,Lake Margaretside,2025-06-30,carl62@example.net,396-806-5750x71116,473,0,8,Fashion
+C0960,26,M,10016,Mitchellstad,2023-12-04,daniel79@example.org,001-340-551-5215x5371,233,0,4,Home
+C0961,43,M,31477,South Richardfort,2023-08-08,alishapope@example.net,409.889.2858,147,4,21,Fashion
+C0962,64,M,13568,East Adam,2020-08-22,hneal@example.net,001-506-502-1834x9049,55,2,149,Fashion
+C0963,39,F,29504,Kristabury,2023-08-10,davissarah@example.net,6858791741,219,2,25,Fashion
+C0964,64,M,22152,North Nancyberg,2025-02-06,antoniosnyder@example.org,(996)780-8796,266,5,143,Home
+C0965,47,M,15039,New John,2022-08-29,crawfordshawn@example.com,001-643-967-1347x39406,563,3,245,Sports
+C0966,60,M,18716,Stanleyland,2022-10-11,harrischristopher@example.com,5275889563,536,4,43,Home
+C0967,65,M,28984,Tracyborough,2023-04-15,moralesjohn@example.net,001-305-962-9079x03247,36,0,293,Electronics
+C0968,34,M,22979,Keithbury,2024-07-19,jgriffith@example.com,001-251-569-5707x8834,251,2,185,Fashion
+C0969,43,F,27827,West Joseph,2025-06-17,kristina22@example.org,(345)324-7719x5059,100,3,42,Beauty
+C0970,53,M,48561,East Jeffreyfurt,2021-03-23,briannabrown@example.com,391-388-2938,85,3,92,Electronics
+C0971,18,F,11781,West Katrina,2023-12-12,vford@example.org,+1-320-874-4729x167,27435,97,317,Sports
+C0972,25,M,42061,Tamaraburgh,2024-03-20,fcannon@example.org,(257)282-7140x376,21,3,324,Sports
+C0973,66,F,22965,Garnershire,2024-06-20,rangelmichelle@example.net,(523)770-7081,271,2,53,Electronics
+C0974,52,F,15374,Thompsonfort,2020-11-15,whanna@example.org,482-422-9248,92,2,84,Sports
+C0975,69,F,12937,Lake Sherri,2024-05-05,teresayang@example.com,(876)875-9841x415,1057,4,34,Fashion
+C0976,32,F,20421,Kathrynfurt,2024-05-30,williamwise@example.com,306.698.5436x465,407,4,76,Beauty
+C0977,64,M,31845,East Joshua,2023-10-02,fieldsdouglas@example.com,919-952-4403,131,1,353,Fashion
+C0978,39,M,20930,Rosestad,2021-12-02,melissa49@example.org,748-899-9671x9637,349,4,197,Fashion
+C0979,31,F,40314,Huynhville,2024-01-10,johnsonbruce@example.net,803-692-2494,657,1,286,Home
+C0980,43,Other,12326,West Marcialand,2023-06-22,elizabeth88@example.com,7259264195,1586,5,88,Beauty
+C0981,45,F,21920,East Markfurt,2021-12-31,traci17@example.com,001-575-254-6810x359,124,1,235,Electronics
+C0982,40,F,13346,Edwardsville,2021-01-30,lyonskelly@example.org,841.620.1513x1871,17434,75,232,Home
+C0983,31,F,25474,Port Derek,2023-12-24,ashleygray@example.org,528.988.3538,1361,3,7,Electronics
+C0984,41,M,31406,Leeside,2021-10-23,lopezrobert@example.org,665-267-7359,1240,2,292,Fashion
+C0985,19,M,18614,Lake Leslie,2023-12-31,heidi75@example.net,(607)328-7383x8081,504,2,38,Fashion
+C0986,62,F,7772,Tracyburgh,2022-07-27,raytanya@example.com,001-408-773-7695x85019,496,1,52,Fashion
+C0987,43,F,23850,West Alison,2022-12-21,langjennifer@example.org,448.683.6229x940,258,2,143,Fashion
+C0988,31,M,26230,Jasonborough,2025-04-02,kwalker@example.net,+1-926-817-3049x29814,697,1,221,Electronics
+C0989,68,F,25892,West Hunter,2021-11-14,ccain@example.org,+1-861-855-4513x179,378,3,240,Electronics
+C0990,24,M,36109,New Jasmine,2021-09-11,montgomeryjoshua@example.net,450.260.4916,565,1,143,Electronics
+C0991,20,F,14351,Russellland,2021-06-20,audrey50@example.net,283-401-7196x2487,279,1,349,Fashion
+C0992,64,M,28914,Lake Cynthia,2024-11-15,reeveslisa@example.org,801-727-9432,657,2,363,Sports
+C0993,40,M,35489,Tuckerville,2021-06-13,richardsonkenneth@example.com,5587633074,869,5,49,Electronics
+C0994,63,F,10813,New Angela,2024-12-08,kyle29@example.com,361.418.3919x25920,79,6,277,Sports
+C0995,60,M,25030,Christopherchester,2024-01-06,lparker@example.com,(336)866-7764,894,2,271,Home
+C0996,64,F,18003,New Andre,2020-08-25,ericaschwartz@example.com,(509)905-2190,388,3,14,Home
+C0997,62,F,21319,Port Kerryside,2021-12-06,oweaver@example.net,661-301-2928x13623,931,5,298,Home
+C0998,35,F,25312,Angelaville,2023-09-20,aaronsimmons@example.org,(225)220-6155,282,5,15,Beauty
+C0999,55,M,18126,New Veronicaberg,2022-06-28,barajasjake@example.net,(295)475-0608x16988,238,0,234,Electronics
