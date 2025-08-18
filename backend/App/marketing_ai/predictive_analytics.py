@@ -84,10 +84,11 @@ def forecast_campaign_success(campaign_features, response_model, response_featur
     success = success_prob > 0.6 and roi > 1.0
     
     return {
-        'success_probability': success_prob,
-        'predicted_roi': roi,
-        'predicted_success': success
+    "success_probability": float(success_prob),
+    "predicted_roi": float(roi),
+    "predicted_success": bool(success)
     }
+
 
 if __name__ == "__main__":
     # Test with sample data
