@@ -59,6 +59,24 @@ _DEFAULT_TEMPLATE = """<!doctype html>
   <p>Privacy Compliance: {{ privacy_compliance.handled }}</p>
   <p>Conversion rate: {{ (conversion_rate | default(0)) | safe_round(2) }}</p>
   <p>Average order value: {{ (avg_order_value | default(0)) | safe_round(2) }}</p>
+  
+  <h2>Predicted Campaign</h2>
+  {% if analysis_results.predicted_campaign is defined %}
+  <table border="1">
+    <tr>
+      <th>Feature</th>
+      <th>Value</th>
+    </tr>
+    <tr><td>Type</td><td>{{ analysis_results.predicted_campaign.campaign_type }}</td></tr>
+    <tr><td>Offer</td><td>{{ analysis_results.predicted_campaign.offer_type }}</td></tr>
+    <tr><td>Target Segment</td><td>{{ analysis_results.predicted_campaign.target_segment }}</td></tr>
+    <tr><td>Discount</td><td>{{ analysis_results.predicted_campaign.discount_pct }}%</td></tr>
+    <tr><td>Budget</td><td>${{ analysis_results.predicted_campaign.budget | safe_round(2) }}</td></tr>
+    <tr><td>Target Size</td><td>{{ analysis_results.predicted_campaign.target_size }}</td></tr>
+  </table>
+  {% else %}
+  <p>No campaign prediction data available.</p>
+  {% endif %}
 
   {% if analysis_results is defined %}
     <h2>Analysis Results</h2>

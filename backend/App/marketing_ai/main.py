@@ -29,17 +29,25 @@ def main():
     segmented_customers, segment_insights = analyze_customer_data(customers_clean)
     campaign_insights = analyze_campaign_data(campaigns)
     
+    # Create analysis_results here
+    analysis_results = {
+        'segment_distribution': segment_insights,
+        'key_segments': [0, 1, 2],
+        'best_performing_type': campaign_insights['best_performing_type'],
+        'best_performing_offer': campaign_insights['best_performing_offer']
+    }
+    
     # Step 5: Build personalization models
     print("\nBuilding personalization models...")
     segmented_customers, seg_model = build_segmentation_model(customers_clean)
     resp_model, report, resp_features = build_response_prediction_model(campaigns)
-    roi_model, roi_metrics, roi_features = build_roi_forecast_model(campaigns)  # Updated to get features
+    roi_model, roi_metrics, roi_features = build_roi_forecast_model(campaigns)
     
     # Step 6: Campaign simulation
     print("\nRunning campaign simulations...")
     campaignA = {
         'type': 'Email',
-        'offer_type': 'Discount',
+        'offer_type': 'Gift',
         'target_segment': 'All',
         'discount': 15,
         'budget': 5000
@@ -57,9 +65,14 @@ def main():
     
     # Step 7: Predictive analytics
     print("\nRunning predictive analytics...")
+    
+    # Get recommended campaign type and offer from analysis
+    recommended_type = analysis_results['best_performing_type']
+    recommended_offer = analysis_results['best_performing_offer']
+    
     campaign_features = {
-        'campaign_type': 'Email',
-        'offer_type': 'Discount',
+        'campaign_type': recommended_type,
+        'offer_type': recommended_offer,
         'target_segment': 'HighIncome',
         'discount_pct': 20,
         'budget': 10000,
@@ -76,12 +89,8 @@ def main():
     
     # Step 8: Generate report
     print("\nGenerating business creativity report...")
-    analysis_results = {
-        'segment_distribution': segment_insights,
-        'key_segments': [0, 1, 2],
-        'best_performing_type': campaign_insights['best_performing_type'],
-        'best_performing_offer': campaign_insights['best_performing_offer']
-    }
+    # Add predicted campaign to analysis_results
+    analysis_results['predicted_campaign'] = campaign_features
     
     # Create report data with privacy compliance info
     privacy_handled = True
@@ -105,8 +114,19 @@ def main():
     print("\n=== Report Summary ===")
     print(f"Identified {len(analysis_results['segment_distribution'])} customer segments")
     print(f"Recommended campaign type: {analysis_results['best_performing_type']}")
+    print(f"Recommended campaign offer: {analysis_results['best_performing_offer']}")
     print(f"Predicted campaign success: {prediction['success_probability']:.2f}")
     print(f"Privacy compliance: {'Met' if report_data['privacy_compliance']['handled'] else 'Needs attention'}") # type: ignore
+    
+    # Print campaign details
+    print("\nPredicted Most Successful Campaign:")
+    print(f"  Type: {campaign_features['campaign_type']}")
+    print(f"  Offer: {campaign_features['offer_type']}")
+    print(f"  Target: {campaign_features['target_segment']}")
+    print(f"  Discount: {campaign_features['discount_pct']}%")
+    print(f"  Budget: ${campaign_features['budget']:,.2f}")
+    print(f"  Target Size: {campaign_features['target_size']} customers")
+    
     print("\nReport saved to reports/ directory")
 
 if __name__ == "__main__":
