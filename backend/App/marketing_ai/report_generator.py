@@ -1,7 +1,7 @@
 # report_generator.py
 from __future__ import annotations
 import logging
-from typing import Any, Dict, Optional, Tuple, Union
+from typing import Any, Dict, Optional, Tuple, Union, List
 from pathlib import Path
 import numbers
 from jinja2 import Environment, FileSystemLoader, Undefined, select_autoescape
@@ -10,6 +10,7 @@ import cloudinary.uploader
 import os
 import time
 import json
+import requests
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -26,6 +27,9 @@ cloudinary.config(
 
 Numeric = Union[int, float]
 
+# Default Worqhat trigger URL (from your snippet)
+_DEFAULT_WORQHAT_FLOW_URL = "https://api.worqhat.com/flows/trigger/b3563f77-29a9-4ec8-af19-b531d8e44d4c"
+
 
 def upload_image_to_cloudinary(image_path: str) -> Optional[str]:
     """
@@ -38,12 +42,9 @@ def upload_image_to_cloudinary(image_path: str) -> Optional[str]:
             folder="marketing_reports/",
             resource_type="image",
         )
-        # prefer secure_url
         url = response.get("secure_url") or response.get("url")
         if not url:
-            logger.error(
-                "Cloudinary upload returned no URL. Response: %r", response
-            )
+            logger.error("Cloudinary upload returned no URL. Response: %r", response)
             return None
         logger.info("Cloudinary upload successful: %s -> %s", image_path, url)
         return url
@@ -195,15 +196,6 @@ _DEFAULT_TEMPLATE = """<!doctype html>
 
 
 def _find_or_create_templates_dir(provided: Optional[str]) -> Path:
-    """
-    If `provided` exists, return it.
-    Otherwise look in likely places:
-      - same directory as this file /templates
-      - current working directory /templates
-      - parent of working dir /templates
-    If none exist, create templates next to this file and write a minimal `report.html`.
-    If an existing report.html lacks required visualization placeholders, overwrite it with a default.
-    """
     module_dir = Path(__file__).resolve().parent
     cwd = Path.cwd()
 
@@ -228,46 +220,141 @@ def _find_or_create_templates_dir(provided: Optional[str]) -> Path:
 
     # none found -> create templates next to module
     target = module_dir / "templates"
-    logger.warning(
-        "No templates dir found in candidates. Creating templates at: %s", target
-    )
+    logger.warning("No templates dir found in candidates. Creating templates at: %s", target)
     target.mkdir(parents=True, exist_ok=True)
-
     return target
 
 
 def _ensure_default_template_file(templates_dir: Path, filename: str = "report.html") -> Path:
-    """
-    Ensure templates_dir/filename exists and contains the visualization placeholders.
-    If the file is missing or doesn't contain expected placeholders, overwrite it with the default.
-    Returns the Path to the template file.
-    """
     target_file = templates_dir / filename
-
     must_have_markers = ["segmentation_image_url", "campaign_analysis_image_url", "roi_prediction_image_url", "<img"]
-
     if not target_file.exists():
         logger.info("Template file missing, writing default template to %s", target_file)
         target_file.write_text(_DEFAULT_TEMPLATE, encoding="utf-8")
         return target_file
-
     try:
         content = target_file.read_text(encoding="utf-8")
     except Exception:
         logger.exception("Failed to read existing template file; overwriting with default: %s", target_file)
         target_file.write_text(_DEFAULT_TEMPLATE, encoding="utf-8")
         return target_file
-
-    # If any of required markers absent, overwrite (user likely has an older minimal template)
     if not all(marker in content for marker in must_have_markers):
-        logger.warning(
-            "Existing template does not contain required visualization placeholders; overwriting %s", target_file
-        )
+        logger.warning("Existing template does not contain required visualization placeholders; overwriting %s", target_file)
         target_file.write_text(_DEFAULT_TEMPLATE, encoding="utf-8")
     else:
         logger.info("Existing template appears to contain visualization placeholders; not overwriting %s", target_file)
-
     return target_file
+
+
+def _find_nested_value(data: Union[Dict, List], target_keys: Tuple[str, ...]) -> Optional[Any]:
+    """Recursively search for any of target keys in nested dictionaries/lists"""
+    if isinstance(data, dict):
+        # Check if any target key exists at current level
+        for key in target_keys:
+            if key in data:
+                return data[key]
+        # Recurse into nested structures
+        for value in data.values():
+            result = _find_nested_value(value, target_keys)
+            if result is not None:
+                return result
+    elif isinstance(data, list):
+        for item in data:
+            result = _find_nested_value(item, target_keys)
+            if result is not None:
+                return result
+    return None
+
+
+def _send_html_to_worqhat(
+    html: str,
+    api_key: Optional[str],
+    flow_url: str = _DEFAULT_WORQHAT_FLOW_URL,
+    save_to: Optional[Path] = None,
+) -> Optional[Tuple[Path, str]]:
+    """
+    Send the rendered HTML to Worqhat flow (trigger) and save the produced PDF locally if possible.
+    - api_key: Bearer token for Worqhat. If None, function will log and return None.
+    - flow_url: full trigger URL for the flow.
+    - save_to: Path to save the resulting PDF (if detected). If None, defaults to reports/business_creativity_report.pdf.
+    Returns tuple (saved_path, pdf_url) on success, otherwise None.
+    """
+    if api_key is None:
+        logger.info("No Worqhat API key provided; skipping HTML->PDF conversion.")
+        return None
+
+    if save_to is None:
+        reports_dir = Path("reports")
+        reports_dir.mkdir(parents=True, exist_ok=True)
+        save_to = reports_dir / "business_creativity_report.pdf"
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    payload = {"html": html}
+
+    try:
+        logger.info("Sending HTML to Worqhat flow: %s", flow_url)
+        resp = requests.post(flow_url, json=payload, headers=headers)
+    except Exception as exc:
+        logger.exception("Failed to call Worqhat flow: %s", exc)
+        return None
+
+    if resp.status_code in (200, 201):
+        content_type = resp.headers.get("content-type", "")
+        # Case A: response itself is a PDF
+        if "application/pdf" in content_type.lower():
+            try:
+                save_to.write_bytes(resp.content)
+                logger.info("Saved PDF returned directly from Worqhat to: %s", save_to)
+                return save_to, None  # type: ignore # No URL for direct PDF response
+            except Exception:
+                logger.exception("Failed to write PDF bytes to %s", save_to)
+                return None
+
+        # Case B: JSON response containing a URL we can download
+        try:
+            response_json = resp.json()
+        except Exception:
+            logger.warning("Worqhat response is not JSON and not PDF. status=%s text=%s", resp.status_code, resp.text)
+            return None
+
+        # Look for PDF URL in nested structure
+        pdf_url = _find_nested_value(
+            response_json, 
+            target_keys=("pdf_url", "download_url", "url", "file_url")
+        )
+
+        if pdf_url and isinstance(pdf_url, str) and pdf_url.startswith(("http://", "https://")):
+            logger.info("Found PDF URL in response: %s", pdf_url)
+            try:
+                # Download the PDF from the URL
+                r2 = requests.get(pdf_url)
+                if r2.status_code == 200 and "application/pdf" in r2.headers.get("content-type", "").lower():
+                    save_to.write_bytes(r2.content)
+                    logger.info("Downloaded generated PDF from %s to %s", pdf_url, save_to)
+                    return save_to, pdf_url
+                else:
+                    logger.warning(
+                        "Downloaded file from %s but it wasn't a PDF (status=%s, type=%s)", 
+                        pdf_url, r2.status_code, r2.headers.get("content-type")
+                    )
+            except Exception as e:
+                logger.exception("Failed to download PDF from %s: %s", pdf_url, e)
+                return None
+        else:
+            # No obvious PDF URL - log json for debugging
+            logger.warning(
+                "Worqhat returned JSON but did not contain a valid PDF URL. "
+                "Searched keys: pdf_url, download_url, url, file_url. "
+                "Response JSON: %s", 
+                json.dumps(response_json, indent=2)
+            )
+            return None
+    else:
+        logger.error("Worqhat API returned status %s: %s", resp.status_code, resp.text)
+        return None
 
 
 def generate_report(
@@ -275,31 +362,23 @@ def generate_report(
     template_name: str = "report.html",
     templates_dir: Optional[str] = None,
     **extra_context: Any
-) -> Tuple[Optional[Dict[str, Any]], str]:
+) -> Tuple[Optional[Dict[str, Any]], str, Optional[str]]:
     """
-    Render the HTML report and return (report_data, html_report_str).
-
-    - Will locate or create a templates directory if one isn't found.
-    - Ensures the template file contains visualization placeholders (overwrites only if necessary).
-    - Accepts extra keyword arguments (e.g. analysis_results=...) and merges them into template context.
+    Render the HTML report and return (report_data, html_report_str, pdf_url).
+    If Worqhat API key is provided (via extra_context['worqhat_api_key'] or env var WORQHAT_API_KEY),
+    the rendered HTML will be sent to the Worqhat flow to attempt HTML->PDF conversion.
+    Returns pdf_url if available.
     """
     tpl_dir_path = _find_or_create_templates_dir(templates_dir)
     tpl_file = _ensure_default_template_file(tpl_dir_path, template_name)
 
-    # Use select_autoescape for HTML templates to avoid accidental double-escaping
-    env = Environment(
-        loader=FileSystemLoader(str(tpl_dir_path)),
-        autoescape=select_autoescape(["html", "xml"]),
-    )
-
-    # Filters
+    env = Environment(loader=FileSystemLoader(str(tpl_dir_path)), autoescape=select_autoescape(["html", "xml"]))
     env.filters["round"] = _safe_round
     env.filters["safe_round"] = _safe_round
     env.filters["tojson"] = lambda obj: json.dumps(obj, default=str, ensure_ascii=False, indent=2)
 
     # Build context
     context: Dict[str, Any] = dict(report_data or {})
-    # Merge extra_context into context (callers can override values)
     context.update(extra_context)
 
     # Upload images and add URLs to context
@@ -310,7 +389,7 @@ def generate_report(
         "roi_prediction_image_url": report_dir / "roi_prediction_accuracy.png",
     }
 
-    # Small wait if some other process is writing files (your code logs show this)
+    # allow a small wait if some other process is writing files
     time.sleep(0.5)
 
     for key, path in image_mapping.items():
@@ -330,14 +409,13 @@ def generate_report(
             context[key] = None
             logger.debug("Image not found, leaving %s as None: %s", key, path)
 
-    # Log the image URLs/values so we can see exactly what will be inserted
-    logger.info("Image context values: segmentation=%s campaign=%s roi=%s",
-                context.get("segmentation_image_url"),
-                context.get("campaign_analysis_image_url"),
-                context.get("roi_prediction_image_url")
-               )
+    logger.info(
+        "Image context values: segmentation=%s campaign=%s roi=%s",
+        context.get("segmentation_image_url"),
+        context.get("campaign_analysis_image_url"),
+        context.get("roi_prediction_image_url"),
+    )
 
-    # Provide a list of keys to template for debugging/display
     context["context_keys"] = sorted(list(context.keys()))
 
     template = env.get_template(template_name)
@@ -350,4 +428,28 @@ def generate_report(
         logger.info("Template context keys (%d): %s", len(context), sorted(context.keys()))
         raise
 
-    return report_data, html_report
+    # Save HTML to reports/ so it's available locally and for Worqhat if needed
+    reports_dir = Path("reports")
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    html_file = reports_dir / "business_creativity_report.html"
+    try:
+        html_file.write_text(html_report, encoding="utf-8")
+        logger.info("Report saved to %s", html_file)
+    except Exception:
+        logger.exception("Failed to save HTML report to %s", html_file)
+
+    # Attempt to send to Worqhat if the API key is provided
+    worqhat_api_key = extra_context.get("worqhat_api_key") or os.getenv("WORQHAT_API_KEY")
+    worqhat_flow_url = extra_context.get("worqhat_flow_url") or _DEFAULT_WORQHAT_FLOW_URL
+
+    pdf_result = _send_html_to_worqhat(html_report, api_key=worqhat_api_key, flow_url=worqhat_flow_url, save_to=reports_dir / "business_creativity_report.pdf")
+    pdf_url = None
+    
+    if pdf_result:
+        pdf_path, pdf_url = pdf_result
+        if pdf_url:
+            logger.info("PDF available at: %s", pdf_url)
+        else:
+            logger.info("PDF saved locally at: %s", pdf_path)
+
+    return report_data, html_report, pdf_url

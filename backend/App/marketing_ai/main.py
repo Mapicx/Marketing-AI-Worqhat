@@ -110,7 +110,8 @@ def main():
                             if 'revenue' in campaigns else 0
     }
     
-    report_data, html_report = generate_report(
+    # Updated to receive 3 return values
+    report_data, html_report, pdf_url = generate_report(
         report_data=report_data,
         analysis_results=analysis_results,
         simulation_results=ab_results,
@@ -138,7 +139,13 @@ def main():
     print(f"  Budget: ${campaign_features['budget']:,.2f}")
     print(f"  Target Size: {campaign_features['target_size']} customers")
     
-    print(f"\nReport saved to {report_path}")
+    # Add PDF URL output
+    if pdf_url:
+        print(f"\nPDF report URL: {pdf_url}")
+    else:
+        print("\nPDF report was not generated or no remote URL available")
+    
+    print(f"\nHTML report saved to {report_path}")
 
 if __name__ == "__main__":
     # Check Cloudinary configuration
