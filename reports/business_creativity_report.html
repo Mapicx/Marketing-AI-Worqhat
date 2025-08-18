@@ -1,28 +1,168 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Report</title></head>
+<head>
+  <meta charset="utf-8">
+  <title>Business Creativity Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .visualization { margin: 20px 0; text-align: center; }
+    img { max-width: 100%; border: 1px solid #eee; }
+    .section { margin-bottom: 30px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    pre {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
 <body>
   <h1>Business Creativity Report</h1>
-  <h2>Summary</h2>
-  <p>Conversion rate: 0</p>
-  <p>Average order value: 0</p>
 
+  <div class="section">
+    <h2>Summary</h2>
+    <p>Privacy Compliance: True</p>
+    <p>Conversion rate: 0.61</p>
+    <p>Average order value: 5.92</p>
+  </div>
+
+  <!-- VISUALIZATIONS SECTION -->
+  <div class="section">
+    <h2>Visualizations</h2>
+
+    
+    <div class="visualization">
+      <h3>Customer Segmentation</h3>
+      <img src="https://res.cloudinary.com/dee2tyk8m/image/upload/v1755555157/marketing_reports/mftb6r28kvszn8odma91.png" alt="Customer Segmentation">
+    </div>
+    
+
+    
+    <div class="visualization">
+      <h3>Conversion Rate by Campaign Type and Offer</h3>
+      <img src="https://res.cloudinary.com/dee2tyk8m/image/upload/v1755555158/marketing_reports/v9x4yv3lmlukucaort0e.png" alt="Campaign Analysis">
+    </div>
+    
+
+    
+    <div class="visualization">
+      <h3>ROI Prediction Accuracy</h3>
+      <img src="https://res.cloudinary.com/dee2tyk8m/image/upload/v1755555158/marketing_reports/jez2mvdluvakpxkr6wdw.png" alt="ROI Prediction">
+    </div>
+    
+  </div>
+
+  <!-- PREDICTED CAMPAIGN SECTION -->
+  <div class="section">
+    <h2>Predicted Campaign</h2>
+    
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Value</th>
+      </tr>
+      <tr><td>Type</td><td>Push</td></tr>
+      <tr><td>Offer</td><td>Bundle</td></tr>
+      <tr><td>Target Segment</td><td>HighIncome</td></tr>
+      <tr><td>Discount</td><td>20%</td></tr>
+      <tr><td>Budget</td><td>$10000</td></tr>
+      <tr><td>Target Size</td><td>5000</td></tr>
+    </table>
+    
+  </div>
+
+  <!-- ANALYSIS RESULTS SECTION -->
   
+  <div class="section">
     <h2>Analysis Results</h2>
-    <pre>{'segment_distribution': {'segment': {0: 0, 1: 1, 2: 2, 3: 3}, 'age': {0: 44.29556650246305, 1: 56.91842105263158, 2: 45.0, 3: 30.016528925619834}, 'income': {0: 37439.32019704433, 1: 20211.486842105263, 2: 24554.0, 3: 20091.0}, 'total_spent': {0: 543.8472906403941, 1: 437.4315789473684, 2: 12274.5, 3: 485.58402203856747}, 'purchase_frequency': {0: 2.8866995073891624, 1: 2.8815789473684212, 2: 75.75, 3: 3.0826446280991737}, 'last_purchase_days': {0: 169.14285714285714, 1: 194.2157894736842, 2: 208.0, 3: 181.77961432506888}}, 'key_segments': [0, 1, 2], 'best_performing_type': 'Push', 'best_performing_offer': 'Bundle', 'predicted_campaign': {'campaign_type': 'Push', 'offer_type': 'Bundle', 'target_segment': 'HighIncome', 'discount_pct': 20, 'budget': 10000, 'target_size': 5000}}</pre>
+    <pre>{
+  "segment_distribution": {
+    "segment": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "age": {
+      "0": 44.29556650246305,
+      "1": 56.91842105263158,
+      "2": 45.0,
+      "3": 30.016528925619834
+    },
+    "income": {
+      "0": 37439.32019704433,
+      "1": 20211.486842105263,
+      "2": 24554.0,
+      "3": 20091.0
+    },
+    "total_spent": {
+      "0": 543.8472906403941,
+      "1": 437.4315789473684,
+      "2": 12274.5,
+      "3": 485.58402203856747
+    },
+    "purchase_frequency": {
+      "0": 2.8866995073891624,
+      "1": 2.8815789473684212,
+      "2": 75.75,
+      "3": 3.0826446280991737
+    },
+    "last_purchase_days": {
+      "0": 169.14285714285714,
+      "1": 194.2157894736842,
+      "2": 208.0,
+      "3": 181.77961432506888
+    }
+  },
+  "key_segments": [
+    0,
+    1,
+    2
+  ],
+  "best_performing_type": "Push",
+  "best_performing_offer": "Bundle",
+  "predicted_campaign": {
+    "campaign_type": "Push",
+    "offer_type": "Bundle",
+    "target_segment": "HighIncome",
+    "discount_pct": 20,
+    "budget": 10000,
+    "target_size": 5000
+  }
+}</pre>
+  </div>
   
 
-  <h2>Full Context Keys</h2>
-  <ul>
+  <!-- CONTEXT KEYS SECTION -->
   
-    <li>analysis_results</li>
+  <div class="section">
+    <h2>Full Context Keys</h2>
+    <ul>
+    
+      <li>analysis_results</li>
+    
+      <li>avg_order_value</li>
+    
+      <li>campaign_analysis_image_url</li>
+    
+      <li>conversion_rate</li>
+    
+      <li>prediction_results</li>
+    
+      <li>privacy_compliance</li>
+    
+      <li>roi_prediction_image_url</li>
+    
+      <li>segmentation_image_url</li>
+    
+      <li>simulation_results</li>
+    
+    </ul>
+  </div>
   
-    <li>prediction_results</li>
-  
-    <li>privacy_compliance</li>
-  
-    <li>simulation_results</li>
-  
-  </ul>
 </body>
 </html>

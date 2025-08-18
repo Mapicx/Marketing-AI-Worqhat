@@ -1,3 +1,4 @@
+# main.py
 import pandas as pd
 from data_loader import generate_customer_data, generate_campaign_history
 from data_analysis import analyze_customer_data, analyze_campaign_data
@@ -8,6 +9,8 @@ from edge_cases import anonymize_data, handle_outliers
 from report_generator import generate_report
 import joblib
 import os
+import time
+import json
 
 def main():
     # Step 1: Create necessary directories
@@ -24,7 +27,7 @@ def main():
     customers_clean = anonymize_data(customers, ['email', 'phone'])
     customers_clean = handle_outliers(customers_clean, ['income', 'total_spent'])
     
-    # Step 4: Audience research
+    # Step 4: Audience research (generates images)
     print("\nAnalyzing customer data...")
     segmented_customers, segment_insights = analyze_customer_data(customers_clean)
     campaign_insights = analyze_campaign_data(campaigns)
@@ -37,11 +40,15 @@ def main():
         'best_performing_offer': campaign_insights['best_performing_offer']
     }
     
-    # Step 5: Build personalization models
+    # Step 5: Build personalization models (ROI model generates image)
     print("\nBuilding personalization models...")
     segmented_customers, seg_model = build_segmentation_model(customers_clean)
     resp_model, report, resp_features = build_response_prediction_model(campaigns)
     roi_model, roi_metrics, roi_features = build_roi_forecast_model(campaigns)
+    
+    # Ensure images are fully written to disk
+    print("Waiting for images to be written to disk...")
+    time.sleep(5)  # Increased from 2 to 3 seconds
     
     # Step 6: Campaign simulation
     print("\nRunning campaign simulations...")
@@ -97,7 +104,10 @@ def main():
     report_data = {
         'privacy_compliance': {
             'handled': privacy_handled
-        }
+        },
+        'conversion_rate': campaign_insights.get('success_rate', 0),
+        'avg_order_value': campaigns['revenue'].mean() / campaigns['target_size'].mean() 
+                            if 'revenue' in campaigns else 0
     }
     
     report_data, html_report = generate_report(
@@ -108,7 +118,8 @@ def main():
     )
     
     # Save the HTML report
-    with open('reports/business_creativity_report.html', 'w') as f:
+    report_path = 'reports/business_creativity_report.html'
+    with open(report_path, 'w') as f:
         f.write(html_report)
     
     print("\n=== Report Summary ===")
@@ -127,7 +138,15 @@ def main():
     print(f"  Budget: ${campaign_features['budget']:,.2f}")
     print(f"  Target Size: {campaign_features['target_size']} customers")
     
-    print("\nReport saved to reports/ directory")
+    print(f"\nReport saved to {report_path}")
 
 if __name__ == "__main__":
-    main()
+    # Check Cloudinary configuration
+    required_envs = ['CLOUDINARY_CLOUD_NAME', 'CLOUDINARY_API_KEY', 'CLOUDINARY_API_SECRET']
+    missing = [env for env in required_envs if not os.getenv(env)]
+    
+    if missing:
+        print(f"Error: Missing Cloudinary environment variables: {', '.join(missing)}")
+        print("Please set these variables before running the application.")
+    else:
+        main()
