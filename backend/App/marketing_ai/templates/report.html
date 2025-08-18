@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Report</title></head>
+<body>
+  <h1>Business Creativity Report</h1>
+  <h2>Summary</h2>
+  <p>Conversion rate: {{ (conversion_rate | default(0)) | safe_round(2) }}</p>
+  <p>Average order value: {{ (avg_order_value | default(0)) | safe_round(2) }}</p>
+
+  {% if analysis_results is defined %}
+    <h2>Analysis Results</h2>
+    <pre>{{ analysis_results }}</pre>
+  {% endif %}
+
+  <h2>Full Context Keys</h2>
+  <ul>
+  {% for k in context_keys | default([]) %}
+    <li>{{ k }}</li>
+  {% endfor %}
+  </ul>
+</body>
+</html>
