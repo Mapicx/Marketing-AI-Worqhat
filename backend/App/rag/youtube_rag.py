@@ -11,8 +11,8 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__) 
-api_key = "AIzaSyAAsnySExNNzKZfA2rHUrtlFxoba0hnzgw"
+logger = logging.getLogger(__name__)
+API_KEY = "AIzaSyAAsnySExNNzKZfA2rHUrtlFxoba0hnzgw"
 @dataclass
 class VideoInfo:
     video_id: str
@@ -36,12 +36,20 @@ class YouTubeRAGSystem:
     Answer:"""
 
     def __init__(self, google_api_key: str):
-        
-        
-  
-        
-        self.embeddings = GoogleGenerativeAIEmbeddings(model='models/embedding-001',google_api_key=api_key)
-        self.llm = ChatGoogleGenerativeAI(model='gemini-2.0-flash', temperature=0.2,google_api_key = api_key)
+        # Ensure the Google API key is available to downstream clients
+        key = google_api_key or API_KEY
+        if key and not os.getenv("GOOGLE_API_KEY"):
+            os.environ["GOOGLE_API_KEY"] = key
+
+        self.embeddings = GoogleGenerativeAIEmbeddings(
+            model='models/embedding-001',
+            google_api_key=key
+        )
+        self.llm = ChatGoogleGenerativeAI(
+            model='gemini-2.0-flash',
+            temperature=0.2,
+            google_api_key=key
+        )
         self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         self.prompt = PromptTemplate(template=self.PROMPT_TEMPLATE, input_variables=['context', 'question'])
         
@@ -52,24 +60,49 @@ class YouTubeRAGSystem:
     def extract_video_id(self, url_or_id: str) -> str:
         if not url_or_id:
             raise YouTubeRAGError("URL or video ID cannot be empty")
-        
+
         url_or_id = url_or_id.strip()
-        if len(url_or_id) == 11 and url_or_id.isalnum():
+        # Accept standard YouTube ID charset (letters, digits, _ and -) with length 11
+        if re.fullmatch(r"[A-Za-z0-9_-]{11}", url_or_id):
             return url_or_id
-        
+
         for pattern in self.URL_PATTERNS:
             match = re.search(pattern, url_or_id)
             if match:
                 return match.group(1)
-        
+
         raise YouTubeRAGError(f"Could not extract video ID from: {url_or_id}")
 
     def get_transcript(self, video_id: str) -> str:
         try:
-            ytt_api = YouTubeTranscriptApi()
-            transcript = ytt_api.fetch(video_id)
-            return " ".join([x.text for x in transcript])
-        
+            # First try direct transcript in common English variants
+            preferred_langs = ["en", "en-US", "en-GB"]
+            try:
+                entries = YouTubeTranscriptApi.get_transcript(video_id, languages=preferred_langs)
+                return " ".join(entry.get("text", "") for entry in entries)
+            except NoTranscriptFound:
+                # Try listing transcripts and pick any available (manual or generated) prioritizing English
+                transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+                # Try manual English first
+                for lang in preferred_langs:
+                    try:
+                        t = transcript_list.find_manually_created_transcript([lang])
+                        return " ".join(x.get("text", "") for x in t.fetch())
+                    except Exception:
+                        continue
+                # Try generated English
+                try:
+                    t = transcript_list.find_generated_transcript(preferred_langs)
+                    return " ".join(x.get("text", "") for x in t.fetch())
+                except Exception:
+                    pass
+                # Fallback: take the first available transcript of any language
+                for t in transcript_list:
+                    try:
+                        return " ".join(x.get("text", "") for x in t.fetch())
+                    except Exception:
+                        continue
+                raise NoTranscriptFound("No transcripts available in any language")
         except TranscriptsDisabled:
             raise YouTubeRAGError(f"Transcripts disabled for video {video_id}")
         except NoTranscriptFound:

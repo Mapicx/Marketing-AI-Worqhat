@@ -4,10 +4,11 @@ from App.rag.youtube_rag import YouTubeRAGSystem, YouTubeRAGError
 
 router = APIRouter()
 
-# Initialize the RAG system once with Google API Key from env
-import os
-GOOGLE_API_KEY = os.getenv("AIzaSyAAsnySExNNzKZfA2rHUrtlFxoba0hnzgw")
-yt_rag = YouTubeRAGSystem(GOOGLE_API_KEY)
+# Hardcoded Google API key as requested
+HARDCODED_GOOGLE_API_KEY = "AIzaSyAAsnySExNNzKZfA2rHUrtlFxoba0hnzgw"
+
+# Initialize once at import time
+yt_rag = YouTubeRAGSystem(HARDCODED_GOOGLE_API_KEY)
 
 class VideoRequest(BaseModel):
     video_url: str
