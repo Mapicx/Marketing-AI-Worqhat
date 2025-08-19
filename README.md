@@ -1,4 +1,4 @@
-# TechNeeti
+# BizAI
 
 A hybrid AI platform for **personalized marketing, promotions, and loyalty**—from audience research to predictive analytics—backed by a workflow‑driven AI automation layer and classic ML models. It ships with a FastAPI backend, a modern React (Vite + TS + Tailwind) frontend, and opinionated workflows for image/slogan generation, report automation, and campaign forecasting.
 
@@ -8,7 +8,7 @@ A hybrid AI platform for **personalized marketing, promotions, and loyalty**—f
 
 ## 🔑 Problem Statement → Solution Mapping
 
-| Rubric Item | How TechNeeti Addresses It |
+| Rubric Item | How BizAI Addresses It |
 | --- | --- |
 | **Start with research** (identify target audiences & patterns) | `marketing_ai/data_loader.py` + `data_analysis.py` mine **campaign_history.csv, customers.csv, interactions.csv, products.csv**; cohorts & RFM‑style segments; intent and channel‑affinity discovery. |
 | **Design data models for personalization** | `personalization_models.py` builds clustering (segmentation_model.pkl), feature scaling (scaler.pkl), and response‑propensity models (response_prediction_model.pkl). |
@@ -54,7 +54,7 @@ RAG over YouTube transcripts for campaign insights
 ## 📂 Project Structure
 
 ```
-TechNeeti/
+BizAI/
 ├── requirements.txt
 ├── backend/
 │   ├── App/
@@ -196,14 +196,14 @@ MODEL_DIR=../models
 Build and run the stack in containers:
 ```bash
 # from project root
-docker build -t techneeti-backend -f Dockerfile.backend ./backend
-docker build -t techneeti-frontend -f Dockerfile.frontend ./frontend
+docker build -t BizAI-backend -f Dockerfile.backend ./backend
+docker build -t BizAI-frontend -f Dockerfile.frontend ./frontend
 
-docker run -d --name techneeti-api -p 8000:8000 \
+docker run -d --name BizAI-api -p 8000:8000 \
   -e GENERATION_API_KEY=$GENERATION_API_KEY \
-  techneeti-backend
+  BizAI-backend
 
-docker run -d --name techneeti-web -p 5173:5173 techneeti-frontend
+docker run -d --name BizAI-web -p 5173:5173 BizAI-frontend
 ```
 > Provide Dockerfiles as needed. The app is structured to be **12‑factor** friendly with env‑based config.
 
@@ -219,7 +219,7 @@ docker run -d --name techneeti-web -p 5173:5173 techneeti-frontend
 
 ---
 
-## 📈 What Sets TechNeeti Apart
+## 📈 What Sets BizAI Apart
 - **End‑to‑end**: research → simulate → decide → auto‑generate assets → report
 - **Workflow‑first**: plug‑and‑play generation capabilities (images, text, documents, speech, email)
 - **Measurable**: ROI & uplift forecasts with uncertainty bands
