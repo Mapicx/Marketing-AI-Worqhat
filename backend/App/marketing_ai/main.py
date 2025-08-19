@@ -1,31 +1,43 @@
 # main.py
 import pandas as pd
-from data_loader import generate_customer_data, generate_campaign_history
-from data_analysis import analyze_customer_data, analyze_campaign_data
-from personalization_models import build_segmentation_model, build_response_prediction_model
-from campaign_simulation import ab_test
-from predictive_analytics import build_roi_forecast_model, forecast_campaign_success
-from edge_cases import anonymize_data, handle_outliers
-from report_generator import generate_report
+from App.marketing_ai.data_loader import generate_customer_data, generate_campaign_history
+from App.marketing_ai.data_analysis import analyze_customer_data, analyze_campaign_data
+from App.marketing_ai.personalization_models import build_segmentation_model, build_response_prediction_model
+from App.marketing_ai.campaign_simulation import ab_test
+from App.marketing_ai.predictive_analytics import build_roi_forecast_model, forecast_campaign_success
+from App.marketing_ai.edge_cases import anonymize_data, handle_outliers
+from App.marketing_ai.report_generator import generate_report
 import joblib
 import os
 import time
 import json
 
-def main():
+def main(csv1: str = None, csv2: str = None):  # type: ignore # 👈 Add parameters
     # Step 1: Create necessary directories
     os.makedirs('reports', exist_ok=True)
     os.makedirs('models', exist_ok=True)
     
-    # Step 2: Generate or load data
-    print("Generating sample datasets...")
-    customers = generate_customer_data(1000)
-    campaigns = generate_campaign_history(200)
+    # Step 2: Load data from uploaded CSVs
+    if csv1 and csv2:
+        print("Loading datasets from uploaded CSVs...")
+        customers = pd.read_csv(csv1)
+        campaigns = pd.read_csv(csv2)
+    else:
+        print("Generating sample datasets...")
+        customers = generate_customer_data(1000)
+        campaigns = generate_campaign_history(200)
     
+    # Step 3: Handle edge cases
     # Step 3: Handle edge cases
     print("\nHandling edge cases...")
     customers_clean = anonymize_data(customers, ['email', 'phone'])
-    customers_clean = handle_outliers(customers_clean, ['income', 'total_spent'])
+    
+    # Only process columns that exist in the DataFrame
+    outlier_cols = [col for col in ['income', 'total_spent'] if col in customers_clean.columns]
+    if outlier_cols:
+        customers_clean = handle_outliers(customers_clean, outlier_cols)
+    else:
+        print("Warning: 'income' and/or 'total_spent' columns not found - skipping outlier handling")
     
     # Step 4: Audience research (generates images)
     print("\nAnalyzing customer data...")
@@ -146,6 +158,20 @@ def main():
         print("\nPDF report was not generated or no remote URL available")
     
     print(f"\nHTML report saved to {report_path}")
+    
+    # At the end of the function, before exiting:
+    return {
+        "status": "success",
+        "segment_count": len(analysis_results['segment_distribution']),
+        "recommended_campaign_type": analysis_results['best_performing_type'],
+        "recommended_offer": analysis_results['best_performing_offer'],
+        "success_probability": prediction['success_probability'],
+        "privacy_compliance": report_data['privacy_compliance']['handled'],
+        "campaign_details": campaign_features,
+        "report_path": report_path,
+        "pdf_url": pdf_url,
+        "logs": []  # Optionally, collect logs if you want
+    }
 
 if __name__ == "__main__":
     # Check Cloudinary configuration
@@ -157,3 +183,4 @@ if __name__ == "__main__":
         print("Please set these variables before running the application.")
     else:
         main()
+    main()
